@@ -8,9 +8,12 @@ date: 2026-10-16
 
 # Who Goes There?
 
-Multiplayer game. Socket.IO server on Railway; the frontend on Vercel reaches it through NEXT_PUBLIC_GAME_SERVER_URL.
+A multiplayer social-deduction game with secret roles; one player is "The Thing". It runs on a Socket.IO server on Railway, and the frontend lives on mknepprath.com.
 
-Code: `~/Developer/wgt-server, pages/who-goes-there*.tsx in ~/Developer/mknepprath-next`
+## Code
+
+- Server: [mknepprath/wgt-server](https://github.com/mknepprath/wgt-server) (public), deployed on Railway
+- Frontend: `pages/who-goes-there*.tsx` in [mknepprath-next](https://github.com/mknepprath/mknepprath-next); it reaches the server through `NEXT_PUBLIC_GAME_SERVER_URL`
 
 ## Development plan
 
@@ -152,8 +155,9 @@ interface GameState {
 - **Game balance**: Stick to original rules exactly as specified
 - **Performance**: Test with 4 concurrent players early
 
+
 ## Status
 
-Stub created 2026-10-16 from Claude Code's memory notes. Last non-bot commit: wgt-server 2026-09-19 (18 commits).
+Written 2026-10-16 from Claude Code's memory notes. Last non-bot commit: wgt-server 2026-09-19 (18 commits).
 
-Status is set by rule, not confirmed: `active` if the last non-bot commit is on or after 2026-08-16 (60 days before 2026-10-16), otherwise `paused`. Commits made by Bishop jobs count as activity. The problem and goal haven't been written yet.
+Status is set by rule, not confirmed: `active` if the last non-bot commit is on or after 2026-08-16 (60 days before 2026-10-16), otherwise `paused`. Commits made by Bishop jobs count as activity.

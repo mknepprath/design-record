@@ -8,12 +8,25 @@ date: 2026-10-16
 
 # Bishop
 
-Personal AI agent: a Claude-powered Telegram bot running as a macOS LaunchAgent.
+A personal AI agent: a Claude-powered Telegram bot that runs on the owner's Mac as a launchd agent. It handles scheduled jobs and ad-hoc requests.
 
-Code: `~/.bishop (repo ~/Developer/bishop), ~/Developer/BishopCockpit`
+## Goal
+
+A lightweight replacement for OpenClaw: reliable scheduled tasks plus an on-demand agent reachable from Telegram. (From Claude Code's memory notes.)
+
+## What it does
+
+Scheduled jobs include a morning briefing, email triage, Todoist rescheduling, Obsidian vault cleanup and indexing, Dependabot PR merging, Downloads and dev-folder cleanup, and a state watchdog. BishopCockpit is a companion iOS app; its one later commit is about surfacing approval errors.
+
+## Private documents
+
+The repo is private; these links work for collaborators only.
+
+- [bishop repo](https://github.com/mknepprath/bishop): job prompts in `jobs/`
+- [BishopCockpit repo](https://github.com/mknepprath/BishopCockpit)
 
 ## Status
 
-Stub created 2026-10-16 from Claude Code's memory notes. Last non-bot commit: bishop 2026-10-04 (112 commits), BishopCockpit 2026-09-10 (2).
+Written 2026-10-16 from Claude Code's memory notes. Last non-bot commit: bishop 2026-10-04 (112 commits), BishopCockpit 2026-09-10 (2).
 
-Status is set by rule, not confirmed: `active` if the last non-bot commit is on or after 2026-08-16 (60 days before 2026-10-16), otherwise `paused`. Commits made by Bishop jobs count as activity. The problem and goal haven't been written yet.
+Status is set by rule, not confirmed: `active` if the last non-bot commit is on or after 2026-08-16 (60 days before 2026-10-16), otherwise `paused`. Commits made by Bishop jobs count as activity.

@@ -8,12 +8,16 @@ date: 2026-10-16
 
 # ytcast
 
-Turns a YouTube channel into an audio-only podcast feed for Overcast, fetching each video's audio the first time it is requested.
+Turns a YouTube channel into an audio-only podcast feed for Overcast. You give it a channel and get back an RSS URL; each episode's audio is fetched the first time it's requested.
 
-Code: `~/Developer/ytcast`
+## Private documents
+
+The repo is private; these links work for collaborators only.
+
+- [ytcast README](https://github.com/mknepprath/ytcast/blob/main/README.md)
 
 ## Status
 
-Stub created 2026-10-16 from the repo's README and git log. First commit 2026-08-19, last non-bot commit 2026-09-16, 6 commits.
+Written 2026-10-16 from the repo's README and git log. First commit 2026-08-19, last non-bot commit 2026-09-16, 6 commits.
 
-Status is set by rule, not confirmed: `active` if the last non-bot commit is on or after 2026-08-16 (60 days before 2026-10-16), otherwise `paused`. Commits made by Bishop jobs count as activity. The problem and goal haven't been written yet.
+Status is set by rule, not confirmed: `active` if the last non-bot commit is on or after 2026-08-16 (60 days before 2026-10-16), otherwise `paused`. Commits made by Bishop jobs count as activity.
