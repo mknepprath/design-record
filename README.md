@@ -1,3 +1,7 @@
+---
+title: About
+---
+
 # design-record
 
 Michael Knepprath's design record across personal projects: what was heard and seen, what was concluded from it, what was decided, and what is being built. Projects are the entry point; everything else backs a project and links to it.
