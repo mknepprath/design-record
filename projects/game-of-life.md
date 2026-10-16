@@ -22,4 +22,4 @@ Local only: `~/Developer/gol-rpg`, no remote. `npm run play` to play, `npm test`
 
 Written 2026-10-16 from the repo's README and git log. First commit 2026-08-15, last non-bot commit 2026-08-16, 22 commits.
 
-Status is set by rule, not confirmed: `active` if the last non-bot commit is on or after 2026-08-16 (60 days before 2026-10-16), otherwise `paused`. Commits made by Bishop jobs count as activity.
+Status is set by rule ([repository activity](../evidence/observations/2026-10-16-repository-activity.md)), not confirmed: `active` if the last non-bot commit is on or after 2026-08-16 (60 days before 2026-10-16), otherwise `paused`. Commits made by Bishop jobs count as activity.
