@@ -1,0 +1,8 @@
+title: design-record
+description: Michael Knepprath's design record across personal projects.
+exclude:
+  - templates/
+  - tools/
+  - go.mod
+  - Makefile
+  - AGENTS.md
