@@ -48,7 +48,7 @@ Live at [showtime-window.vercel.app](https://showtime-window.vercel.app) since 2
 | --- | --- |
 | 1 Fit logic | Done: `lib/fit.ts` with tests |
 | 2 Cinemark adapter and API | Done: T1–T6 pass, T5 from Vercel ([first conformance run](../evidence/observations/2026-10-16-showtime-window-first-conformance-run.md)) |
-| 3 Window picker and shortlist | Built. The "matches the Cinemark site when checked by hand" criterion hasn't been checked. |
+| 3 Window picker and shortlist | Done: the shortlist for 2026-10-17, 6–10 PM, matched the Cinemark page ([hand check](../evidence/observations/2026-10-17-showtime-window-shortlist-hand-check.md)). The check was scripted, and the page's form wasn't driven. |
 | 4 Measured padding | Not started |
 | 5 More sources | Not started |
 
