@@ -48,9 +48,9 @@ Live at [showtime-window.vercel.app](https://showtime-window.vercel.app) since 2
 | --- | --- |
 | 1 Fit logic | Done: `lib/fit.ts` with tests |
 | 2 Cinemark adapter and API | Done: T1–T6 pass, T5 from Vercel ([first conformance run](../evidence/observations/2026-10-16-showtime-window-first-conformance-run.md)) |
-| 3 Window picker and shortlist | Done: the shortlist for 2026-10-17, 6–10 PM, matched the Cinemark page ([hand check](../evidence/observations/2026-10-17-showtime-window-shortlist-hand-check.md)). The check was scripted, and the page's form wasn't driven. |
-| 4 Measured padding | Not started |
-| 5 More sources | Not started |
+| 3 Window picker and shortlist | Done: the shortlist for 2026-10-17, 6–10 PM, matched the Cinemark page ([hand check](../evidence/observations/2026-10-16-showtime-window-shortlist-hand-check.md)). A [browser test](../evidence/observations/2026-10-16-showtime-window-browser-test-run.md) drives the form and matches the rendered list. |
+| 4 Measured padding | Tool built: "At the theater" logs when a film starts and offers the median per theater as the trailer minutes. No visits logged yet. |
+| 5 More sources | Assessed: [Study 0002](../studies/0002-which-cleveland-area-theaters-can-be-read-for-free.md) ranks Atlas Cinemas (Veezi) first, then Cleveland Cinemas. Not built. |
 
 Not done: the GitHub repo isn't connected to Vercel yet, so pushes don't deploy; deploys run with `vercel deploy --prod`.
 

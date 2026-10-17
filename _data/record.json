@@ -253,6 +253,21 @@
     ]
   },
   {
+    "path": "evidence/observations/2026-10-16-atlas-cinemas-veezi-sessions-data.md",
+    "kind": "observation",
+    "layer": "evidence",
+    "title": "Atlas Cinemas' Veezi pages carry schema.org sessions",
+    "date": "2026-10-16",
+    "source": "curl of https://www.atlascinemas.net/ and its five Veezi sessions pages from a home connection, about 11:00 PM Eastern on 2026-10-16",
+    "projects": [
+      "showtime-window"
+    ],
+    "backlinks": [
+      "evidence/observations/2026-10-16-cleveland-area-theater-access.md",
+      "studies/0002-which-cleveland-area-theaters-can-be-read-for-free.md"
+    ]
+  },
+  {
     "path": "evidence/observations/2026-10-16-cinemark-screeningevent-data.md",
     "kind": "observation",
     "layer": "evidence",
@@ -286,6 +301,35 @@
       "decisions/0008-move-memory-map-out-of-obsidian.md",
       "decisions/0009-back-duck-pond-cards-with-obsidian-notes.md",
       "decisions/0010-give-each-content-type-its-own-object.md"
+    ]
+  },
+  {
+    "path": "evidence/observations/2026-10-16-cleveland-area-theater-access.md",
+    "kind": "observation",
+    "layer": "evidence",
+    "title": "Cleveland-area theater sites from a script",
+    "date": "2026-10-16",
+    "source": "curl from a home connection and web searches, about 10:50–11:15 PM Eastern on 2026-10-16",
+    "projects": [
+      "showtime-window"
+    ],
+    "backlinks": [
+      "studies/0002-which-cleveland-area-theaters-can-be-read-for-free.md"
+    ]
+  },
+  {
+    "path": "evidence/observations/2026-10-16-cleveland-cinemas-schedule-api.md",
+    "kind": "observation",
+    "layer": "evidence",
+    "title": "Cleveland Cinemas serves schedules from a public JSON endpoint",
+    "date": "2026-10-16",
+    "source": "Network requests recorded in headless Chromium on https://www.clevelandcinemas.com/our-locations/x04q9-cedar-lee-theatre/, then the same endpoints called with curl, about 11:05 PM Eastern on 2026-10-16",
+    "projects": [
+      "showtime-window"
+    ],
+    "backlinks": [
+      "evidence/observations/2026-10-16-cleveland-area-theater-access.md",
+      "studies/0002-which-cleveland-area-theaters-can-be-read-for-free.md"
     ]
   },
   {
@@ -402,6 +446,20 @@
     ]
   },
   {
+    "path": "evidence/observations/2026-10-16-showtime-window-browser-test-run.md",
+    "kind": "observation",
+    "layer": "evidence",
+    "title": "Showtime window browser test run",
+    "date": "2026-10-16",
+    "source": "npm run e2e in showtime-window at commit a3d4392, against http://localhost:3123 and https://showtime-window.vercel.app, about 11:00 PM Eastern on 2026-10-16",
+    "projects": [
+      "showtime-window"
+    ],
+    "backlinks": [
+      "projects/showtime-window.md"
+    ]
+  },
+  {
     "path": "evidence/observations/2026-10-16-showtime-window-first-conformance-run.md",
     "kind": "observation",
     "layer": "evidence",
@@ -418,6 +476,20 @@
     ]
   },
   {
+    "path": "evidence/observations/2026-10-16-showtime-window-shortlist-hand-check.md",
+    "kind": "observation",
+    "layer": "evidence",
+    "title": "Showtime window shortlist checked against the Cinemark site",
+    "date": "2026-10-16",
+    "source": "Rendered Cinemark Valley View page for 2026-10-17 (headless Chrome, visible text) compared with https://showtime-window.vercel.app/api/showtimes and lib/fit.ts, about 10:40 PM Eastern on 2026-10-16",
+    "projects": [
+      "showtime-window"
+    ],
+    "backlinks": [
+      "projects/showtime-window.md"
+    ]
+  },
+  {
     "path": "evidence/observations/2026-10-16-theater-site-access-from-a-script.md",
     "kind": "observation",
     "layer": "evidence",
@@ -429,6 +501,7 @@
     ],
     "backlinks": [
       "decisions/0003-cinemark-as-the-first-showtime-source.md",
+      "evidence/observations/2026-10-16-cleveland-area-theater-access.md",
       "specs/0001-showtime-source-conformance.md",
       "studies/0001-which-showtime-sources-can-be-read-for-free.md"
     ]
@@ -459,20 +532,6 @@
     ],
     "backlinks": [
       "projects/who-goes-there.md"
-    ]
-  },
-  {
-    "path": "evidence/observations/2026-10-17-showtime-window-shortlist-hand-check.md",
-    "kind": "observation",
-    "layer": "evidence",
-    "title": "Showtime window shortlist checked against the Cinemark site",
-    "date": "2026-10-17",
-    "source": "Rendered Cinemark Valley View page for 2026-10-17 (headless Chrome, visible text) compared with https://showtime-window.vercel.app/api/showtimes and lib/fit.ts, about 10:40 PM Eastern on 2026-10-16",
-    "projects": [
-      "showtime-window"
-    ],
-    "backlinks": [
-      "projects/showtime-window.md"
     ]
   },
   {
@@ -733,15 +792,20 @@
       "evidence/feedback/2026-10-16-owner-constraints-for-showtime-window.md",
       "evidence/feedback/2026-10-16-owner-picks-theater-and-hosting.md",
       "evidence/observations/2026-10-16-alamo-drafthouse-schedule-json.md",
+      "evidence/observations/2026-10-16-atlas-cinemas-veezi-sessions-data.md",
       "evidence/observations/2026-10-16-cinemark-screeningevent-data.md",
+      "evidence/observations/2026-10-16-cleveland-area-theater-access.md",
+      "evidence/observations/2026-10-16-cleveland-cinemas-schedule-api.md",
       "evidence/observations/2026-10-16-free-showtime-data-options.md",
+      "evidence/observations/2026-10-16-showtime-window-browser-test-run.md",
       "evidence/observations/2026-10-16-showtime-window-first-conformance-run.md",
+      "evidence/observations/2026-10-16-showtime-window-shortlist-hand-check.md",
       "evidence/observations/2026-10-16-theater-site-access-from-a-script.md",
-      "evidence/observations/2026-10-17-showtime-window-shortlist-hand-check.md",
       "glossary/padding.md",
       "glossary/showing.md",
       "specs/0001-showtime-source-conformance.md",
-      "studies/0001-which-showtime-sources-can-be-read-for-free.md"
+      "studies/0001-which-showtime-sources-can-be-read-for-free.md",
+      "studies/0002-which-cleveland-area-theaters-can-be-read-for-free.md"
     ]
   },
   {
@@ -843,7 +907,8 @@
     "backlinks": [
       "decisions/0003-cinemark-as-the-first-showtime-source.md",
       "projects/showtime-window.md",
-      "studies/0001-which-showtime-sources-can-be-read-for-free.md"
+      "studies/0001-which-showtime-sources-can-be-read-for-free.md",
+      "studies/0002-which-cleveland-area-theaters-can-be-read-for-free.md"
     ]
   },
   {
@@ -876,7 +941,24 @@
     ],
     "backlinks": [
       "decisions/0003-cinemark-as-the-first-showtime-source.md",
-      "specs/0001-showtime-source-conformance.md"
+      "specs/0001-showtime-source-conformance.md",
+      "studies/0002-which-cleveland-area-theaters-can-be-read-for-free.md"
+    ]
+  },
+  {
+    "path": "studies/0002-which-cleveland-area-theaters-can-be-read-for-free.md",
+    "kind": "study",
+    "layer": "synthesis",
+    "ref": "Study 0002",
+    "title": "Which Cleveland-area theaters can be read for free",
+    "status": "done",
+    "owner": "Michael Knepprath",
+    "date": "2026-10-16",
+    "projects": [
+      "showtime-window"
+    ],
+    "backlinks": [
+      "projects/showtime-window.md"
     ]
   }
 ]

@@ -1,7 +1,7 @@
 ---
 kind: observation
 title: Showtime window shortlist checked against the Cinemark site
-date: 2026-10-17
+date: 2026-10-16
 source: Rendered Cinemark Valley View page for 2026-10-17 (headless Chrome, visible text) compared with https://showtime-window.vercel.app/api/showtimes and lib/fit.ts, about 10:40 PM Eastern on 2026-10-16
 projects: [showtime-window]
 ---
