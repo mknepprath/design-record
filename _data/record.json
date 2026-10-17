@@ -229,6 +229,23 @@
       "showtime-window"
     ],
     "backlinks": [
+      "decisions/0016-every-cinemark-in-ohio-and-bordering-states.md",
+      "projects/showtime-window.md"
+    ]
+  },
+  {
+    "path": "decisions/0016-every-cinemark-in-ohio-and-bordering-states.md",
+    "kind": "adr",
+    "layer": "decision",
+    "ref": "ADR 0016",
+    "title": "Every Cinemark in Ohio and bordering states, generated from the sitemap",
+    "status": "accepted",
+    "owner": "Michael Knepprath",
+    "date": "2026-10-17",
+    "projects": [
+      "showtime-window"
+    ],
+    "backlinks": [
       "projects/showtime-window.md"
     ]
   },
@@ -319,6 +336,7 @@
       "decisions/0012-add-atlas-cinemas-via-veezi.md",
       "decisions/0014-add-cleveland-cinemas-via-its-box-office-api.md",
       "decisions/0015-include-theaters-by-travel-time.md",
+      "decisions/0016-every-cinemark-in-ohio-and-bordering-states.md",
       "projects/showtime-window.md"
     ]
   },
@@ -574,6 +592,7 @@
     ],
     "backlinks": [
       "decisions/0011-host-showtime-window-on-vercel.md",
+      "evidence/observations/2026-10-17-cinemark-rate-limits-vercel.md",
       "projects/showtime-window.md",
       "specs/0001-showtime-source-conformance.md"
     ]
@@ -653,6 +672,36 @@
     ]
   },
   {
+    "path": "evidence/observations/2026-10-17-cinemark-rate-limits-vercel.md",
+    "kind": "observation",
+    "layer": "evidence",
+    "title": "Cinemark answers Vercel with 429 after a few dozen requests",
+    "date": "2026-10-17",
+    "source": "scripts/conformance-live.ts against https://showtime-window.vercel.app (private showtime-window repo, commits f77f8ef and its follow-up), vercel logs for production, and curl from a home connection, 2026-10-17 between about 4:40 and 5:00 PM Eastern",
+    "projects": [
+      "showtime-window"
+    ],
+    "backlinks": [
+      "decisions/0016-every-cinemark-in-ohio-and-bordering-states.md",
+      "projects/showtime-window.md",
+      "specs/0001-showtime-source-conformance.md"
+    ]
+  },
+  {
+    "path": "evidence/observations/2026-10-17-cinemark-sitemap-catalog.md",
+    "kind": "observation",
+    "layer": "evidence",
+    "title": "Cinemark's sitemap lists every theater, and each page gives its location",
+    "date": "2026-10-17",
+    "source": "https://www.cinemark.com/sitemap.xml and theater pages fetched one per second by scripts/cinemark-catalog.ts (private showtime-window repo, commit f77f8ef), 2026-10-17 about 4:30 PM Eastern",
+    "projects": [
+      "showtime-window"
+    ],
+    "backlinks": [
+      "decisions/0016-every-cinemark-in-ohio-and-bordering-states.md"
+    ]
+  },
+  {
     "path": "evidence/observations/2026-10-17-cleveland-cinemas-api-boundaries.md",
     "kind": "observation",
     "layer": "evidence",
@@ -679,6 +728,7 @@
     "backlinks": [
       "decisions/0014-add-cleveland-cinemas-via-its-box-office-api.md",
       "decisions/0015-include-theaters-by-travel-time.md",
+      "evidence/observations/2026-10-17-cinemark-rate-limits-vercel.md",
       "projects/showtime-window.md",
       "specs/0001-showtime-source-conformance.md"
     ]
@@ -956,6 +1006,7 @@
       "decisions/0013-one-shortlist-across-theaters.md",
       "decisions/0014-add-cleveland-cinemas-via-its-box-office-api.md",
       "decisions/0015-include-theaters-by-travel-time.md",
+      "decisions/0016-every-cinemark-in-ohio-and-bordering-states.md",
       "evidence/feedback/2026-10-16-owner-constraints-for-showtime-window.md",
       "evidence/feedback/2026-10-16-owner-picks-theater-and-hosting.md",
       "evidence/feedback/2026-10-17-owner-wants-as-many-theaters-as-possible.md",
@@ -971,6 +1022,8 @@
       "evidence/observations/2026-10-16-showtime-window-shortlist-hand-check.md",
       "evidence/observations/2026-10-16-showtime-window-veezi-conformance-run.md",
       "evidence/observations/2026-10-16-theater-site-access-from-a-script.md",
+      "evidence/observations/2026-10-17-cinemark-rate-limits-vercel.md",
+      "evidence/observations/2026-10-17-cinemark-sitemap-catalog.md",
       "evidence/observations/2026-10-17-cleveland-cinemas-api-boundaries.md",
       "evidence/observations/2026-10-17-showtime-window-cleveland-cinemas-and-travel-limit-test-run.md",
       "evidence/observations/2026-10-17-showtime-window-combined-list-test-run.md",

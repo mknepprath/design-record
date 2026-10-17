@@ -89,7 +89,7 @@ export interface SourceAdapter {
 | T6 Runtime sanity | When present, `runtimeMin` is between 40 and 300 | R7 |
 | T7 Drift alarm | 0 showings for a theater that had more than 0 the day before fails the build and keeps the previous JSON | Stability |
 
-T5 mattered most, because datacenter IP addresses may be treated differently from a home connection. It passed from Vercel on 2026-10-16, along with T1–T4 and T6 ([first conformance run](../evidence/observations/2026-10-16-showtime-window-first-conformance-run.md)). T7 isn't implemented: there is no stored previous day to compare against under ADR 0011.
+T5 mattered most, because datacenter IP addresses may be treated differently from a home connection. It passed from Vercel on 2026-10-16, along with T1–T4 and T6 ([first conformance run](../evidence/observations/2026-10-16-showtime-window-first-conformance-run.md)). Since 2026-10-17, a T5 run covering every Cinemark theater from Vercel trips Cinemark's rate limit ([observation](../evidence/observations/2026-10-17-cinemark-rate-limits-vercel.md)), so T5 is run per subset with `ONLY=`. T7 isn't implemented: there is no stored previous day to compare against under ADR 0011.
 
 ### Cinemark notes for the adapter
 
