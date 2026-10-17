@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {%- assign doc = site.data.record | where: "path", page.path | first -%}
+  <title>{% if doc %}{{ doc.title }} · {% elsif page.title and page.title != "Index" %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <link rel="stylesheet" href="{{ '/assets/site.css' | relative_url }}">
+</head>
+<body>
+  <header class="site">
+    <nav>
+      <a class="brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+      <a href="{{ '/#projects' | relative_url }}">Projects</a>
+      <a href="{{ '/#decisions' | relative_url }}">Decisions</a>
+      <a href="{{ '/#synthesis' | relative_url }}">Synthesis</a>
+      <a href="{{ '/#evidence' | relative_url }}">Evidence</a>
+      <a href="{{ '/README.html' | relative_url }}">About</a>
+    </nav>
+  </header>
+  <main>
+    {%- if doc %}
+    <div class="meta">
+      <span class="kind">{% if doc.ref != "" and doc.ref %}{{ doc.ref }}{% else %}{{ doc.kind | capitalize }}{% endif %}</span>
+      {%- if doc.status %} <span class="status status-{{ doc.status }}">{{ doc.status }}</span>{% endif %}
+      <span>{{ doc.date }}</span>
+      {%- if doc.owner %} <span>{{ doc.owner }}</span>{% endif %}
+      {%- for p in doc.projects %}
+        {%- assign pp = "projects/" | append: p | append: ".md" -%}
+        {%- assign pd = site.data.record | where: "path", pp | first %}
+        <a class="chip" href="{{ pp | replace: '.md', '.html' | relative_url }}">{{ pd.title | default: p }}</a>
+      {%- endfor %}
+      {%- if doc.source %}<div class="source">Source: {{ doc.source }}</div>{% endif %}
+    </div>
+    {%- endif %}
+    <article>{{ content }}</article>
+    {%- if doc and doc.backlinks.size > 0 %}
+    <section class="backlinks">
+      <h2>{% if doc.kind == "project" %}Documents for this project{% else %}Linked from{% endif %}</h2>
+      {%- assign layers = "decision,synthesis,evidence,project" | split: "," %}
+      {%- for layer in layers %}
+        {%- assign group = "" | split: "" %}
+        {%- for b in doc.backlinks %}
+          {%- assign bd = site.data.record | where: "path", b | first %}
+          {%- if bd.layer == layer %}{% assign group = group | push: bd %}{% endif %}
+        {%- endfor %}
+        {%- if group.size > 0 %}
+        <h3>{% case layer %}{% when "decision" %}Decisions and specs{% when "synthesis" %}Synthesis{% when "evidence" %}Evidence{% else %}Projects{% endcase %}</h3>
+        <ul>
+          {%- for bd in group %}
+          <li><a href="{{ bd.path | replace: '.md', '.html' | relative_url }}">{% if bd.ref != "" and bd.ref %}{{ bd.ref }}: {% endif %}{{ bd.title }}</a>{% if bd.status %} <span class="status status-{{ bd.status }}">{{ bd.status }}</span>{% endif %} <span class="muted">{{ bd.date }}</span></li>
+          {%- endfor %}
+        </ul>
+        {%- endif %}
+      {%- endfor %}
+    </section>
+    {%- endif %}
+    {%- unless page.layout == "home" %}
+    <footer><a href="https://github.com/{{ site.repository }}/blob/main/{{ page.path }}">View or change this page on GitHub</a></footer>
+    {%- endunless %}
+  </main>
+  <script src="{{ '/assets/site.js' | relative_url }}"></script>
+</body>
+</html>

@@ -152,6 +152,14 @@ func check(root string) ([]string, error) {
 	if string(have) != want {
 		problems = append(problems, "INDEX.md: out of date; run make index")
 	}
+	wantData, err := renderData(docs)
+	if err != nil {
+		return nil, err
+	}
+	haveData, _ := os.ReadFile(filepath.Join(root, filepath.FromSlash(dataPath)))
+	if string(haveData) != wantData {
+		problems = append(problems, dataPath+": out of date; run make index")
+	}
 	return problems, nil
 }
 

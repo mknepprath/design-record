@@ -32,6 +32,8 @@ func validRepo(t *testing.T) string {
 	}
 	idx, _ := renderIndex(docs)
 	write(t, root, "INDEX.md", idx)
+	data, _ := renderData(docs)
+	write(t, root, dataPath, data)
 	return root
 }
 
@@ -106,5 +108,16 @@ func TestParseFrontmatterLists(t *testing.T) {
 	f, l, body, ok := parseFrontmatter("---\ntitle: \"A: b\"\nprojects: [x, y]\nevidence:\n  - one.md\n  - two.md\n---\nbody\n")
 	if !ok || f["title"] != "A: b" || len(l["projects"]) != 2 || len(l["evidence"]) != 2 || body != "body\n" {
 		t.Fatalf("got %v %v %q %v", f, l, body, ok)
+	}
+}
+
+func TestBacklinks(t *testing.T) {
+	root := validRepo(t)
+	docs, _ := loadDocs(root)
+	data, _ := renderData(docs)
+	if !strings.Contains(data, `"backlinks": [
+      "decisions/0001-d.md"
+    ]`) {
+		t.Fatalf("project should be linked from the ADR:\n%s", data)
 	}
 }

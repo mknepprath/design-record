@@ -1,8 +1,14 @@
-title: design-record
-description: Michael Knepprath's design record across personal projects.
+title: Design record
+description: What was heard and seen, what was concluded, what was decided, and what is being built, across Michael Knepprath's personal projects.
+repository: mknepprath/design-record
 exclude:
   - templates/
   - tools/
   - go.mod
   - Makefile
   - AGENTS.md
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default

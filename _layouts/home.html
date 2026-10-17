@@ -1,0 +1,41 @@
+---
+layout: default
+---
+<h1>{{ site.title }}</h1>
+<p class="lead">{{ site.description }} Projects are the entry point. Each document is changed by commit; see <a href="{{ '/README.html' | relative_url }}">About</a>.</p>
+<input id="filter" type="search" placeholder="Filter by title, status, ADR number or date" aria-label="Filter documents">
+
+{%- assign docs = site.data.record %}
+{%- assign projects = docs | where: "kind", "project" | sort: "title" %}
+<section id="projects" class="listing">
+  <h2>Projects <span class="count">{{ projects.size }}</span></h2>
+  <table>
+    <thead><tr><th>Title</th><th>Status</th><th>Documents</th><th>Date</th></tr></thead>
+    <tbody>
+    {%- for d in projects %}
+      <tr><td><a href="{{ d.path | replace: '.md', '.html' | relative_url }}">{{ d.title }}</a></td><td><span class="status status-{{ d.status }}">{{ d.status }}</span></td><td>{{ d.backlinks.size }}</td><td>{{ d.date }}</td></tr>
+    {%- endfor %}
+    </tbody>
+  </table>
+</section>
+
+{%- assign sections = "decision:decisions:Decisions and specs,synthesis:synthesis:Synthesis,evidence:evidence:Evidence" | split: "," %}
+{%- for s in sections %}
+  {%- assign parts = s | split: ":" %}
+  {%- assign group = docs | where: "layer", parts[0] %}
+  {%- if parts[0] == "evidence" %}{% assign group = group | sort: "date" | reverse %}{% else %}{% assign group = group | sort: "path" %}{% endif %}
+<section id="{{ parts[1] }}" class="listing">
+  <h2>{{ parts[2] }} <span class="count">{{ group.size }}</span></h2>
+  {%- if group.size == 0 %}<p class="muted">None yet.</p>{% else %}
+  <table>
+    <thead><tr><th>Ref</th><th>Title</th><th>Status</th><th>Date</th></tr></thead>
+    <tbody>
+    {%- for d in group %}
+      <tr><td>{% if d.ref != "" and d.ref %}{{ d.ref }}{% else %}{{ d.kind | capitalize }}{% endif %}</td><td><a href="{{ d.path | replace: '.md', '.html' | relative_url }}">{{ d.title }}</a></td><td>{% if d.status %}<span class="status status-{{ d.status }}">{{ d.status }}</span>{% endif %}</td><td>{{ d.date }}</td></tr>
+    {%- endfor %}
+    </tbody>
+  </table>
+  {%- endif %}
+</section>
+{%- endfor %}
+<p id="no-match" class="muted" hidden>Nothing matches.</p>

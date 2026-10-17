@@ -14,9 +14,11 @@ A turn-based roguelike where your balance sheet is your character sheet. An emer
 
 One turn is a month, and a run is 120 turns unless you go broke first. Each turn runs income, upkeep, your action, an encounter, interest, the market, then settlement. You only make decisions in the action step. Full mechanics: [Spec 0002](../specs/0002-game-of-life-design.md).
 
-## Code
+## Private documents
 
-Local only: `~/Developer/gol-rpg`, no remote. `npm run play` to play, `npm test` for the engine tests.
+The repo is private; these links work for collaborators only.
+
+- [gol-rpg repo](https://github.com/mknepprath/gol-rpg): `npm run play` to play, `npm test` for the engine tests
 
 ## Status
 

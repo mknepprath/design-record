@@ -1,0 +1,52 @@
+:root {
+  --bg: #fbfaf7; --fg: #1d1d1b; --muted: #6b6a66; --line: #e3e0d8; --accent: #2f5d8a;
+  --chip: #efece5; --idea: #8a6d1f; --active: #2e7d4f; --paused: #8a6d1f; --done: #4a5568; --dropped: #9b3b3b;
+  --proposed: #8a6d1f; --accepted: #2e7d4f; --rejected: #9b3b3b; --superseded: #6b6a66; --draft: #8a6d1f; --review: #2f5d8a;
+  --planned: #6b6a66; --running: #2f5d8a;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #161615; --fg: #e8e6e1; --muted: #9a978f; --line: #2e2d2a; --accent: #8ab4dd; --chip: #262522;
+    --active: #6cc08e; --accepted: #6cc08e; --dropped: #e08a8a; --rejected: #e08a8a; --idea: #d8b65a; --paused: #d8b65a;
+    --proposed: #d8b65a; --draft: #d8b65a; --review: #8ab4dd; --running: #8ab4dd; --done: #a0aec0;
+  }
+}
+:root[data-theme="dark"] { --bg: #161615; --fg: #e8e6e1; --muted: #9a978f; --line: #2e2d2a; --accent: #8ab4dd; --chip: #262522; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+a { color: var(--accent); }
+header.site { border-bottom: 1px solid var(--line); }
+header.site nav { max-width: 860px; margin: 0 auto; padding: 12px 16px; display: flex; flex-wrap: wrap; gap: 6px 18px; align-items: baseline; }
+header.site a { text-decoration: none; color: var(--muted); }
+header.site a.brand { color: var(--fg); font-weight: 650; margin-right: 8px; }
+main { max-width: 860px; margin: 0 auto; padding: 24px 16px 64px; }
+h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 12px; }
+h2 { margin-top: 2em; }
+.lead { color: var(--muted); max-width: 640px; }
+table { width: 100%; border-collapse: collapse; font-size: 0.95rem; display: block; overflow-x: auto; }
+th, td { text-align: left; padding: 7px 10px 7px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); font-weight: 600; }
+td:last-child, th:last-child { white-space: nowrap; }
+pre, code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.88em; }
+pre { background: var(--chip); padding: 12px; overflow-x: auto; border-radius: 6px; }
+:not(pre) > code { background: var(--chip); padding: 1px 4px; border-radius: 4px; }
+blockquote { margin: 0; padding-left: 14px; border-left: 3px solid var(--line); color: var(--muted); }
+#filter { width: 100%; max-width: 480px; padding: 9px 12px; font: inherit; color: var(--fg); background: var(--bg); border: 1px solid var(--line); border-radius: 6px; margin: 8px 0 8px; }
+.count { color: var(--muted); font-weight: 400; font-size: 0.8em; }
+.meta { display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: center; color: var(--muted); font-size: 0.9rem; padding-bottom: 12px; border-bottom: 1px solid var(--line); margin-bottom: 8px; }
+.meta .kind { font-weight: 650; color: var(--fg); }
+.meta .source { flex-basis: 100%; }
+.chip { background: var(--chip); padding: 1px 8px; border-radius: 10px; text-decoration: none; }
+.status { display: inline-block; font-size: 0.78rem; padding: 0 8px; border-radius: 10px; border: 1px solid currentColor; line-height: 1.6; }
+.status-idea { color: var(--idea); } .status-active { color: var(--active); } .status-paused { color: var(--paused); }
+.status-done { color: var(--done); } .status-dropped { color: var(--dropped); } .status-proposed { color: var(--proposed); }
+.status-accepted { color: var(--accepted); } .status-rejected { color: var(--rejected); } .status-superseded { color: var(--superseded); }
+.status-draft { color: var(--draft); } .status-review { color: var(--review); } .status-planned { color: var(--planned); } .status-running { color: var(--running); }
+.muted { color: var(--muted); }
+.backlinks { margin-top: 48px; padding-top: 8px; border-top: 1px solid var(--line); }
+.backlinks h2 { margin-top: 0.8em; font-size: 1.1rem; }
+.backlinks h3 { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); margin-bottom: 4px; }
+.backlinks ul { margin-top: 0; padding-left: 18px; }
+footer { margin-top: 48px; font-size: 0.85rem; }
+footer a { color: var(--muted); }
+@media (max-width: 600px) { h1 { font-size: 1.6rem; } }

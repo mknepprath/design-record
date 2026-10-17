@@ -1,0 +1,815 @@
+[
+  {
+    "path": "decisions/0001-build-a-web-app-first.md",
+    "kind": "adr",
+    "layer": "decision",
+    "ref": "ADR 0001",
+    "title": "Build a web app first",
+    "status": "accepted",
+    "owner": "Michael Knepprath",
+    "date": "2026-10-16",
+    "projects": [
+      "showtime-window"
+    ],
+    "backlinks": [
+      "projects/showtime-window.md"
+    ]
+  },
+  {
+    "path": "decisions/0002-prebuild-showtimes-as-static-json.md",
+    "kind": "adr",
+    "layer": "decision",
+    "ref": "ADR 0002",
+    "title": "Prebuild showtimes as static JSON on a schedule",
+    "status": "proposed",
+    "owner": "Michael Knepprath",
+    "date": "2026-10-16",
+    "projects": [
+      "showtime-window"
+    ],
+    "backlinks": [
+      "decisions/0001-build-a-web-app-first.md",
+      "decisions/0005-publish-lily-dex-data-as-static-json.md",
+      "projects/showtime-window.md"
+    ]
+  },
+  {
+    "path": "decisions/0003-cinemark-as-the-first-showtime-source.md",
+    "kind": "adr",
+    "layer": "decision",
+    "ref": "ADR 0003",
+    "title": "Cinemark as the first showtime source",
+    "status": "accepted",
+    "owner": "Michael Knepprath",
+    "date": "2026-10-16",
+    "projects": [
+      "showtime-window"
+    ],
+    "backlinks": [
+      "projects/showtime-window.md"
+    ]
+  },
+  {
+    "path": "decisions/0004-run-the-who-goes-there-server-on-railway.md",
+    "kind": "adr",
+    "layer": "decision",
+    "ref": "ADR 0004",
+    "title": "Run the Who Goes There? game server on Railway, apart from the site",
+    "status": "accepted",
+    "owner": "Michael Knepprath",
+    "date": "2026-10-16",
+    "projects": [
+      "who-goes-there"
+    ],
+    "backlinks": []
+  },
+  {
+    "path": "decisions/0005-publish-lily-dex-data-as-static-json.md",
+    "kind": "adr",
+    "layer": "decision",
+    "ref": "ADR 0005",
+    "title": "Publish lily dex data as static JSON on GitHub Pages every 6 hours",
+    "status": "accepted",
+    "owner": "Michael Knepprath",
+    "date": "2026-10-16",
+    "projects": [
+      "lily-dex"
+    ],
+    "backlinks": []
+  },
+  {
+    "path": "decisions/0006-keep-pokemon-go-event-times-as-local-time.md",
+    "kind": "adr",
+    "layer": "decision",
+    "ref": "ADR 0006",
+    "title": "Keep Pokémon GO event times as naive local times",
+    "status": "accepted",
+    "owner": "Michael Knepprath",
+    "date": "2026-10-16",
+    "projects": [
+      "lily-dex"
+    ],
+    "backlinks": []
+  },
+  {
+    "path": "decisions/0007-make-the-lilt-engine-stateless.md",
+    "kind": "adr",
+    "layer": "decision",
+    "ref": "ADR 0007",
+    "title": "Make the lilt engine stateless, with state held by the client",
+    "status": "accepted",
+    "owner": "Michael Knepprath",
+    "date": "2026-10-16",
+    "projects": [
+      "lilt"
+    ],
+    "backlinks": []
+  },
+  {
+    "path": "decisions/0008-move-memory-map-out-of-obsidian.md",
+    "kind": "adr",
+    "layer": "decision",
+    "ref": "ADR 0008",
+    "title": "Move Memory Map out of Obsidian into a standalone web app",
+    "status": "accepted",
+    "owner": "Michael Knepprath",
+    "date": "2026-10-16",
+    "projects": [
+      "memory-map"
+    ],
+    "backlinks": []
+  },
+  {
+    "path": "decisions/0009-back-duck-pond-cards-with-obsidian-notes.md",
+    "kind": "adr",
+    "layer": "decision",
+    "ref": "ADR 0009",
+    "title": "Back Duck Pond cards with Obsidian notes",
+    "status": "accepted",
+    "owner": "Michael Knepprath",
+    "date": "2026-10-16",
+    "projects": [
+      "duck-pond"
+    ],
+    "backlinks": []
+  },
+  {
+    "path": "decisions/0010-give-each-content-type-its-own-object.md",
+    "kind": "adr",
+    "layer": "decision",
+    "ref": "ADR 0010",
+    "title": "Give each content type on mknepprath.com its own physical object",
+    "status": "accepted",
+    "owner": "Michael Knepprath",
+    "date": "2026-10-16",
+    "projects": [
+      "mknepprath-next"
+    ],
+    "backlinks": []
+  },
+  {
+    "path": "evidence/feedback/2026-10-16-owner-confirms-project-statuses.md",
+    "kind": "feedback",
+    "layer": "evidence",
+    "title": "Owner confirms project statuses",
+    "date": "2026-10-16",
+    "source": "Michael Knepprath, Claude Code conversation, 2026-10-16",
+    "projects": [
+      "duck-pond",
+      "memory-map",
+      "oracle",
+      "stubpedia",
+      "tardy-critic",
+      "test-game-0",
+      "game-of-life"
+    ],
+    "backlinks": [
+      "projects/bearings-scan.md",
+      "projects/bishop.md",
+      "projects/bout.md",
+      "projects/duck-pond.md",
+      "projects/every-pokemon-card.md",
+      "projects/game-of-life.md",
+      "projects/lilt.md",
+      "projects/lily-dex.md",
+      "projects/llm-style.md",
+      "projects/memory-map.md",
+      "projects/mknepprath-next.md",
+      "projects/oracle.md",
+      "projects/pokemon-facts.md",
+      "projects/pokemon-prestige-red.md",
+      "projects/robot-mk.md",
+      "projects/stubpedia.md",
+      "projects/tardy-critic.md",
+      "projects/test-game-0.md",
+      "projects/tiny-mystery-club.md",
+      "projects/who-goes-there.md",
+      "projects/ytcast.md"
+    ]
+  },
+  {
+    "path": "evidence/feedback/2026-10-16-owner-constraints-for-showtime-window.md",
+    "kind": "feedback",
+    "layer": "evidence",
+    "title": "Owner's constraints for the showtime window app",
+    "date": "2026-10-16",
+    "source": "Michael Knepprath, Claude Code conversation, 2026-10-16",
+    "projects": [
+      "showtime-window"
+    ],
+    "backlinks": [
+      "decisions/0001-build-a-web-app-first.md",
+      "decisions/0002-prebuild-showtimes-as-static-json.md",
+      "decisions/0003-cinemark-as-the-first-showtime-source.md",
+      "projects/showtime-window.md",
+      "specs/0001-showtime-source-conformance.md"
+    ]
+  },
+  {
+    "path": "evidence/observations/2026-10-16-alamo-drafthouse-schedule-json.md",
+    "kind": "observation",
+    "layer": "evidence",
+    "title": "Alamo Drafthouse serves a public schedule JSON per market",
+    "date": "2026-10-16",
+    "source": "curl and Python inspection of an Alamo Drafthouse endpoint, 2026-10-16",
+    "projects": [
+      "showtime-window"
+    ],
+    "backlinks": [
+      "studies/0001-which-showtime-sources-can-be-read-for-free.md"
+    ]
+  },
+  {
+    "path": "evidence/observations/2026-10-16-cinemark-screeningevent-data.md",
+    "kind": "observation",
+    "layer": "evidence",
+    "title": "Cinemark theater pages embed ScreeningEvent data",
+    "date": "2026-10-16",
+    "source": "curl of a Cinemark theater page, 2026-10-16",
+    "projects": [
+      "showtime-window"
+    ],
+    "backlinks": [
+      "decisions/0003-cinemark-as-the-first-showtime-source.md",
+      "specs/0001-showtime-source-conformance.md",
+      "studies/0001-which-showtime-sources-can-be-read-for-free.md"
+    ]
+  },
+  {
+    "path": "evidence/observations/2026-10-16-claude-code-memory-notes-on-projects.md",
+    "kind": "observation",
+    "layer": "evidence",
+    "title": "Claude Code memory notes about projects",
+    "date": "2026-10-16",
+    "source": "Claude Code memory files in ~/.claude/projects/-Users-mknepprath/memory/, read 2026-10-16",
+    "projects": [
+      "lily-dex",
+      "bishop",
+      "memory-map",
+      "duck-pond",
+      "mknepprath-next"
+    ],
+    "backlinks": [
+      "decisions/0008-move-memory-map-out-of-obsidian.md",
+      "decisions/0009-back-duck-pond-cards-with-obsidian-notes.md",
+      "decisions/0010-give-each-content-type-its-own-object.md"
+    ]
+  },
+  {
+    "path": "evidence/observations/2026-10-16-free-showtime-data-options.md",
+    "kind": "observation",
+    "layer": "evidence",
+    "title": "Free and paid showtime data options, from web search",
+    "date": "2026-10-16",
+    "source": "Web searches run from Claude Code, 2026-10-16",
+    "projects": [
+      "showtime-window"
+    ],
+    "backlinks": [
+      "decisions/0002-prebuild-showtimes-as-static-json.md",
+      "studies/0001-which-showtime-sources-can-be-read-for-free.md"
+    ]
+  },
+  {
+    "path": "evidence/observations/2026-10-16-game-of-life-test-run.md",
+    "kind": "observation",
+    "layer": "evidence",
+    "title": "Game of Life test suite passes",
+    "date": "2026-10-16",
+    "source": "`npm test` in ~/Developer/gol-rpg at commit d9ec957, run 2026-10-16",
+    "projects": [
+      "game-of-life"
+    ],
+    "backlinks": [
+      "specs/0002-game-of-life-design.md"
+    ]
+  },
+  {
+    "path": "evidence/observations/2026-10-16-lilt-readme.md",
+    "kind": "observation",
+    "layer": "evidence",
+    "title": "lilt README",
+    "date": "2026-10-16",
+    "source": "lilt README.md at commit 615167e (public repo), read 2026-10-16",
+    "projects": [
+      "lilt"
+    ],
+    "backlinks": [
+      "decisions/0007-make-the-lilt-engine-stateless.md"
+    ]
+  },
+  {
+    "path": "evidence/observations/2026-10-16-lily-dex-api-readme.md",
+    "kind": "observation",
+    "layer": "evidence",
+    "title": "lily-dex-api README",
+    "date": "2026-10-16",
+    "source": "lily-dex-api README.md at commit e3648c1 (public repo), read 2026-10-16",
+    "projects": [
+      "lily-dex"
+    ],
+    "backlinks": [
+      "decisions/0005-publish-lily-dex-data-as-static-json.md",
+      "decisions/0006-keep-pokemon-go-event-times-as-local-time.md"
+    ]
+  },
+  {
+    "path": "evidence/observations/2026-10-16-repository-activity.md",
+    "kind": "observation",
+    "layer": "evidence",
+    "title": "Repository activity across projects",
+    "date": "2026-10-16",
+    "source": "git log and gh repo view for each repo under ~/Developer, run 2026-10-16",
+    "projects": [
+      "bearings-scan",
+      "bishop",
+      "bout",
+      "duck-pond",
+      "every-pokemon-card",
+      "game-of-life",
+      "lilt",
+      "lily-dex",
+      "llm-style",
+      "memory-map",
+      "mknepprath-next",
+      "oracle",
+      "pokemon-facts",
+      "pokemon-prestige-red",
+      "robot-mk",
+      "stubpedia",
+      "tardy-critic",
+      "test-game-0",
+      "tiny-mystery-club",
+      "who-goes-there",
+      "ytcast"
+    ],
+    "backlinks": [
+      "projects/bearings-scan.md",
+      "projects/bishop.md",
+      "projects/bout.md",
+      "projects/duck-pond.md",
+      "projects/every-pokemon-card.md",
+      "projects/game-of-life.md",
+      "projects/lilt.md",
+      "projects/lily-dex.md",
+      "projects/llm-style.md",
+      "projects/memory-map.md",
+      "projects/mknepprath-next.md",
+      "projects/oracle.md",
+      "projects/pokemon-facts.md",
+      "projects/pokemon-prestige-red.md",
+      "projects/robot-mk.md",
+      "projects/stubpedia.md",
+      "projects/tardy-critic.md",
+      "projects/test-game-0.md",
+      "projects/tiny-mystery-club.md",
+      "projects/who-goes-there.md",
+      "projects/ytcast.md"
+    ]
+  },
+  {
+    "path": "evidence/observations/2026-10-16-theater-site-access-from-a-script.md",
+    "kind": "observation",
+    "layer": "evidence",
+    "title": "Theater site access from a script",
+    "date": "2026-10-16",
+    "source": "curl from a home connection (macOS), 2026-10-16",
+    "projects": [
+      "showtime-window"
+    ],
+    "backlinks": [
+      "decisions/0003-cinemark-as-the-first-showtime-source.md",
+      "specs/0001-showtime-source-conformance.md",
+      "studies/0001-which-showtime-sources-can-be-read-for-free.md"
+    ]
+  },
+  {
+    "path": "evidence/observations/2026-10-16-who-goes-there-deployment-guide.md",
+    "kind": "observation",
+    "layer": "evidence",
+    "title": "Who Goes There? deployment guide",
+    "date": "2026-10-16",
+    "source": "mknepprath-next VERCEL-DEPLOYMENT.md at commit ff85ced (public repo), read 2026-10-16",
+    "projects": [
+      "who-goes-there"
+    ],
+    "backlinks": [
+      "decisions/0004-run-the-who-goes-there-server-on-railway.md"
+    ]
+  },
+  {
+    "path": "evidence/observations/2026-10-16-who-goes-there-stopped-attempt-in-mknepprath-next.md",
+    "kind": "observation",
+    "layer": "evidence",
+    "title": "A second Who Goes There? build in mknepprath-next was stopped",
+    "date": "2026-10-16",
+    "source": "mknepprath-next WHO-GOES-THERE-STATUS.md, dated 2026-03-04, read 2026-10-16",
+    "projects": [
+      "who-goes-there"
+    ],
+    "backlinks": [
+      "projects/who-goes-there.md"
+    ]
+  },
+  {
+    "path": "glossary/padding.md",
+    "kind": "glossary",
+    "layer": "synthesis",
+    "title": "Padding",
+    "date": "2026-10-16",
+    "projects": [
+      "showtime-window"
+    ],
+    "backlinks": [
+      "glossary/showing.md",
+      "projects/showtime-window.md",
+      "specs/0001-showtime-source-conformance.md"
+    ]
+  },
+  {
+    "path": "glossary/showing.md",
+    "kind": "glossary",
+    "layer": "synthesis",
+    "title": "Showing",
+    "date": "2026-10-16",
+    "projects": [
+      "showtime-window"
+    ],
+    "backlinks": []
+  },
+  {
+    "path": "projects/bearings-scan.md",
+    "kind": "project",
+    "layer": "project",
+    "title": "Bearings Scan",
+    "status": "active",
+    "owner": "Michael Knepprath",
+    "date": "2026-10-16",
+    "projects": [],
+    "backlinks": [
+      "evidence/observations/2026-10-16-repository-activity.md"
+    ]
+  },
+  {
+    "path": "projects/bishop.md",
+    "kind": "project",
+    "layer": "project",
+    "title": "Bishop",
+    "status": "active",
+    "owner": "Michael Knepprath",
+    "date": "2026-10-16",
+    "projects": [],
+    "backlinks": [
+      "evidence/observations/2026-10-16-claude-code-memory-notes-on-projects.md",
+      "evidence/observations/2026-10-16-repository-activity.md"
+    ]
+  },
+  {
+    "path": "projects/bout.md",
+    "kind": "project",
+    "layer": "project",
+    "title": "bout",
+    "status": "active",
+    "owner": "Michael Knepprath",
+    "date": "2026-10-16",
+    "projects": [],
+    "backlinks": [
+      "evidence/observations/2026-10-16-repository-activity.md"
+    ]
+  },
+  {
+    "path": "projects/duck-pond.md",
+    "kind": "project",
+    "layer": "project",
+    "title": "Duck Pond",
+    "status": "dropped",
+    "owner": "Michael Knepprath",
+    "date": "2026-10-16",
+    "projects": [],
+    "backlinks": [
+      "decisions/0009-back-duck-pond-cards-with-obsidian-notes.md",
+      "evidence/feedback/2026-10-16-owner-confirms-project-statuses.md",
+      "evidence/observations/2026-10-16-claude-code-memory-notes-on-projects.md",
+      "evidence/observations/2026-10-16-repository-activity.md"
+    ]
+  },
+  {
+    "path": "projects/every-pokemon-card.md",
+    "kind": "project",
+    "layer": "project",
+    "title": "Every Pokémon Card bot",
+    "status": "active",
+    "owner": "Michael Knepprath",
+    "date": "2026-10-16",
+    "projects": [],
+    "backlinks": [
+      "evidence/observations/2026-10-16-repository-activity.md"
+    ]
+  },
+  {
+    "path": "projects/game-of-life.md",
+    "kind": "project",
+    "layer": "project",
+    "title": "Game of Life",
+    "status": "done",
+    "owner": "Michael Knepprath",
+    "date": "2026-10-16",
+    "projects": [],
+    "backlinks": [
+      "evidence/feedback/2026-10-16-owner-confirms-project-statuses.md",
+      "evidence/observations/2026-10-16-game-of-life-test-run.md",
+      "evidence/observations/2026-10-16-repository-activity.md",
+      "specs/0002-game-of-life-design.md"
+    ]
+  },
+  {
+    "path": "projects/lilt.md",
+    "kind": "project",
+    "layer": "project",
+    "title": "lilt",
+    "status": "active",
+    "owner": "Michael Knepprath",
+    "date": "2026-10-16",
+    "projects": [],
+    "backlinks": [
+      "decisions/0007-make-the-lilt-engine-stateless.md",
+      "evidence/observations/2026-10-16-lilt-readme.md",
+      "evidence/observations/2026-10-16-repository-activity.md",
+      "projects/mknepprath-next.md"
+    ]
+  },
+  {
+    "path": "projects/lily-dex.md",
+    "kind": "project",
+    "layer": "project",
+    "title": "lily dex",
+    "status": "active",
+    "owner": "Michael Knepprath",
+    "date": "2026-10-16",
+    "projects": [],
+    "backlinks": [
+      "decisions/0005-publish-lily-dex-data-as-static-json.md",
+      "decisions/0006-keep-pokemon-go-event-times-as-local-time.md",
+      "evidence/observations/2026-10-16-claude-code-memory-notes-on-projects.md",
+      "evidence/observations/2026-10-16-lily-dex-api-readme.md",
+      "evidence/observations/2026-10-16-repository-activity.md"
+    ]
+  },
+  {
+    "path": "projects/llm-style.md",
+    "kind": "project",
+    "layer": "project",
+    "title": "llm-style",
+    "status": "active",
+    "owner": "Michael Knepprath",
+    "date": "2026-10-16",
+    "projects": [],
+    "backlinks": [
+      "evidence/observations/2026-10-16-repository-activity.md"
+    ]
+  },
+  {
+    "path": "projects/memory-map.md",
+    "kind": "project",
+    "layer": "project",
+    "title": "Memory Map",
+    "status": "paused",
+    "owner": "Michael Knepprath",
+    "date": "2026-10-16",
+    "projects": [],
+    "backlinks": [
+      "decisions/0008-move-memory-map-out-of-obsidian.md",
+      "evidence/feedback/2026-10-16-owner-confirms-project-statuses.md",
+      "evidence/observations/2026-10-16-claude-code-memory-notes-on-projects.md",
+      "evidence/observations/2026-10-16-repository-activity.md"
+    ]
+  },
+  {
+    "path": "projects/mknepprath-next.md",
+    "kind": "project",
+    "layer": "project",
+    "title": "mknepprath.com",
+    "status": "active",
+    "owner": "Michael Knepprath",
+    "date": "2026-10-16",
+    "projects": [],
+    "backlinks": [
+      "decisions/0010-give-each-content-type-its-own-object.md",
+      "evidence/observations/2026-10-16-claude-code-memory-notes-on-projects.md",
+      "evidence/observations/2026-10-16-repository-activity.md"
+    ]
+  },
+  {
+    "path": "projects/oracle.md",
+    "kind": "project",
+    "layer": "project",
+    "title": "Oracle",
+    "status": "dropped",
+    "owner": "Michael Knepprath",
+    "date": "2026-10-16",
+    "projects": [],
+    "backlinks": [
+      "evidence/feedback/2026-10-16-owner-confirms-project-statuses.md",
+      "evidence/observations/2026-10-16-repository-activity.md"
+    ]
+  },
+  {
+    "path": "projects/pokemon-facts.md",
+    "kind": "project",
+    "layer": "project",
+    "title": "Pokémon Facts bot",
+    "status": "active",
+    "owner": "Michael Knepprath",
+    "date": "2026-10-16",
+    "projects": [],
+    "backlinks": [
+      "evidence/observations/2026-10-16-repository-activity.md"
+    ]
+  },
+  {
+    "path": "projects/pokemon-prestige-red.md",
+    "kind": "project",
+    "layer": "project",
+    "title": "Pokémon Prestige Red",
+    "status": "active",
+    "owner": "Michael Knepprath",
+    "date": "2026-10-16",
+    "projects": [],
+    "backlinks": [
+      "evidence/observations/2026-10-16-repository-activity.md"
+    ]
+  },
+  {
+    "path": "projects/robot-mk.md",
+    "kind": "project",
+    "layer": "project",
+    "title": "robot-mk",
+    "status": "active",
+    "owner": "Michael Knepprath",
+    "date": "2026-10-16",
+    "projects": [],
+    "backlinks": [
+      "evidence/observations/2026-10-16-repository-activity.md"
+    ]
+  },
+  {
+    "path": "projects/showtime-window.md",
+    "kind": "project",
+    "layer": "project",
+    "title": "Showtime window",
+    "status": "active",
+    "owner": "Michael Knepprath",
+    "date": "2026-10-16",
+    "projects": [],
+    "backlinks": [
+      "decisions/0001-build-a-web-app-first.md",
+      "decisions/0002-prebuild-showtimes-as-static-json.md",
+      "decisions/0003-cinemark-as-the-first-showtime-source.md",
+      "evidence/feedback/2026-10-16-owner-constraints-for-showtime-window.md",
+      "evidence/observations/2026-10-16-alamo-drafthouse-schedule-json.md",
+      "evidence/observations/2026-10-16-cinemark-screeningevent-data.md",
+      "evidence/observations/2026-10-16-free-showtime-data-options.md",
+      "evidence/observations/2026-10-16-theater-site-access-from-a-script.md",
+      "glossary/padding.md",
+      "glossary/showing.md",
+      "specs/0001-showtime-source-conformance.md",
+      "studies/0001-which-showtime-sources-can-be-read-for-free.md"
+    ]
+  },
+  {
+    "path": "projects/stubpedia.md",
+    "kind": "project",
+    "layer": "project",
+    "title": "Stubpedia",
+    "status": "paused",
+    "owner": "Michael Knepprath",
+    "date": "2026-10-16",
+    "projects": [],
+    "backlinks": [
+      "evidence/feedback/2026-10-16-owner-confirms-project-statuses.md",
+      "evidence/observations/2026-10-16-repository-activity.md"
+    ]
+  },
+  {
+    "path": "projects/tardy-critic.md",
+    "kind": "project",
+    "layer": "project",
+    "title": "Tardy Critic",
+    "status": "paused",
+    "owner": "Michael Knepprath",
+    "date": "2026-10-16",
+    "projects": [],
+    "backlinks": [
+      "evidence/feedback/2026-10-16-owner-confirms-project-statuses.md",
+      "evidence/observations/2026-10-16-repository-activity.md"
+    ]
+  },
+  {
+    "path": "projects/test-game-0.md",
+    "kind": "project",
+    "layer": "project",
+    "title": "test-game-0",
+    "status": "dropped",
+    "owner": "Michael Knepprath",
+    "date": "2026-10-16",
+    "projects": [],
+    "backlinks": [
+      "evidence/feedback/2026-10-16-owner-confirms-project-statuses.md",
+      "evidence/observations/2026-10-16-repository-activity.md"
+    ]
+  },
+  {
+    "path": "projects/tiny-mystery-club.md",
+    "kind": "project",
+    "layer": "project",
+    "title": "Tiny Mystery Club",
+    "status": "active",
+    "owner": "Michael Knepprath",
+    "date": "2026-10-16",
+    "projects": [],
+    "backlinks": [
+      "evidence/observations/2026-10-16-repository-activity.md"
+    ]
+  },
+  {
+    "path": "projects/who-goes-there.md",
+    "kind": "project",
+    "layer": "project",
+    "title": "Who Goes There?",
+    "status": "active",
+    "owner": "Michael Knepprath",
+    "date": "2026-10-16",
+    "projects": [],
+    "backlinks": [
+      "decisions/0004-run-the-who-goes-there-server-on-railway.md",
+      "evidence/observations/2026-10-16-repository-activity.md",
+      "evidence/observations/2026-10-16-who-goes-there-deployment-guide.md",
+      "evidence/observations/2026-10-16-who-goes-there-stopped-attempt-in-mknepprath-next.md"
+    ]
+  },
+  {
+    "path": "projects/ytcast.md",
+    "kind": "project",
+    "layer": "project",
+    "title": "ytcast",
+    "status": "active",
+    "owner": "Michael Knepprath",
+    "date": "2026-10-16",
+    "projects": [],
+    "backlinks": [
+      "evidence/observations/2026-10-16-repository-activity.md"
+    ]
+  },
+  {
+    "path": "specs/0001-showtime-source-conformance.md",
+    "kind": "spec",
+    "layer": "decision",
+    "ref": "Spec 0001",
+    "title": "Showtime source conformance",
+    "status": "draft",
+    "owner": "Michael Knepprath",
+    "date": "2026-10-16",
+    "projects": [
+      "showtime-window"
+    ],
+    "backlinks": [
+      "decisions/0003-cinemark-as-the-first-showtime-source.md",
+      "projects/showtime-window.md",
+      "studies/0001-which-showtime-sources-can-be-read-for-free.md"
+    ]
+  },
+  {
+    "path": "specs/0002-game-of-life-design.md",
+    "kind": "spec",
+    "layer": "decision",
+    "ref": "Spec 0002",
+    "title": "Game of Life design",
+    "status": "accepted",
+    "owner": "Michael Knepprath",
+    "date": "2026-10-16",
+    "projects": [
+      "game-of-life"
+    ],
+    "backlinks": [
+      "projects/game-of-life.md"
+    ]
+  },
+  {
+    "path": "studies/0001-which-showtime-sources-can-be-read-for-free.md",
+    "kind": "study",
+    "layer": "synthesis",
+    "ref": "Study 0001",
+    "title": "Which showtime sources can be read for free",
+    "status": "done",
+    "owner": "Michael Knepprath",
+    "date": "2026-10-16",
+    "projects": [
+      "showtime-window"
+    ],
+    "backlinks": [
+      "decisions/0003-cinemark-as-the-first-showtime-source.md",
+      "projects/showtime-window.md",
+      "specs/0001-showtime-source-conformance.md"
+    ]
+  }
+]

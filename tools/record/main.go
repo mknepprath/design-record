@@ -50,6 +50,16 @@ func main() {
 		if err := os.WriteFile(filepath.Join(root, "INDEX.md"), []byte(out), 0o644); err != nil {
 			fail(err)
 		}
+		data, err := renderData(docs)
+		if err != nil {
+			fail(err)
+		}
+		if err := os.MkdirAll(filepath.Join(root, "_data"), 0o755); err != nil {
+			fail(err)
+		}
+		if err := os.WriteFile(filepath.Join(root, filepath.FromSlash(dataPath)), []byte(data), 0o644); err != nil {
+			fail(err)
+		}
 		fmt.Printf("INDEX.md: %d documents\n", len(docs))
 	case "new":
 		args := os.Args[2:]
