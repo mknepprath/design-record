@@ -160,4 +160,4 @@ interface GameState {
 
 Written 2026-10-16 from Claude Code's memory notes. Last non-bot commit: wgt-server 2026-09-19 (18 commits).
 
-Status is set by rule ([repository activity](../evidence/observations/2026-10-16-repository-activity.md)), not confirmed: `active` if the last non-bot commit is on or after 2026-08-16 (60 days before 2026-10-16), otherwise `paused`. Commits made by Bishop jobs count as activity.
+Status `active` confirmed by the owner on 2026-10-16 ([owner's confirmation](../evidence/feedback/2026-10-16-owner-confirms-project-statuses.md)). Commit history: [repository activity](../evidence/observations/2026-10-16-repository-activity.md).

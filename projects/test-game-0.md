@@ -1,7 +1,7 @@
 ---
 kind: project
 title: test-game-0
-status: paused
+status: dropped
 owner: Michael Knepprath
 date: 2026-10-16
 ---
@@ -18,4 +18,4 @@ A game project with a collaborator. Ideas are brainstormed in [issue #1](https:/
 
 Written 2026-10-16 from the repo's README and git log. First commit 2026-03-25, last non-bot commit 2026-03-26, 9 commits.
 
-Status is set by rule ([repository activity](../evidence/observations/2026-10-16-repository-activity.md)), not confirmed: `active` if the last non-bot commit is on or after 2026-08-16 (60 days before 2026-10-16), otherwise `paused`. Commits made by Bishop jobs count as activity.
+Status `dropped` confirmed by the owner on 2026-10-16 ([owner's confirmation](../evidence/feedback/2026-10-16-owner-confirms-project-statuses.md)). Commit history: [repository activity](../evidence/observations/2026-10-16-repository-activity.md).
