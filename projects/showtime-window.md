@@ -27,7 +27,7 @@ For a chosen window and a saved set of theaters, list every showing where leavin
 
 ## Scope
 
-- In: Cinemark Valley View XD and IMAX, plus (proposed in [ADR 0012](../decisions/0012-add-atlas-cinemas-via-veezi.md)) Cinemark Strongsville and Cuyahoga Falls and five Atlas Cinemas theaters; any day the source lists, padding set per theater, travel minutes entered by hand, a link to buy tickets.
+- In: one list across the theaters you pick, with travel per theater; Cinemark Valley View XD and IMAX, plus (proposed in [ADR 0012](../decisions/0012-add-atlas-cinemas-via-veezi.md)) Cinemark Strongsville and Cuyahoga Falls and five Atlas Cinemas theaters; any day the source lists, padding set per theater, travel minutes entered by hand, a link to buy tickets.
 - Out: accounts, AMC and Regal (blocked by Cloudflare), seat maps, paid data feeds, a native app.
 
 ## Plan
@@ -51,6 +51,8 @@ Live at [showtime-window.vercel.app](https://showtime-window.vercel.app) since 2
 | 3 Window picker and shortlist | Done: the shortlist for 2026-10-17, 6–10 PM, matched the Cinemark page ([hand check](../evidence/observations/2026-10-16-showtime-window-shortlist-hand-check.md)). A [browser test](../evidence/observations/2026-10-16-showtime-window-browser-test-run.md) drives the form and matches the rendered list. |
 | 4 Measured padding | Tool built: "At the theater" logs when a film starts and offers the median per theater as the trailer minutes. No visits logged yet. |
 | 5 More sources | Veezi adapter live for five Atlas theaters, plus two more Cinemarks ([ADR 0012](../decisions/0012-add-atlas-cinemas-via-veezi.md), proposed; [conformance run](../evidence/observations/2026-10-16-showtime-window-veezi-conformance-run.md)). Cleveland Cinemas, second in [Study 0002](../studies/0002-which-cleveland-area-theaters-can-be-read-for-free.md), not built. |
+
+Since [ADR 0013](../decisions/0013-one-shortlist-across-theaters.md), one list covers every ticked theater, each with its own travel minutes, which can be estimated from your location.
 
 Not done: the GitHub repo isn't connected to Vercel yet, so pushes don't deploy; deploys run with `vercel deploy --prod`.
 
