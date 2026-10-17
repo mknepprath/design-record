@@ -30,8 +30,7 @@
     "backlinks": [
       "decisions/0001-build-a-web-app-first.md",
       "decisions/0005-publish-lily-dex-data-as-static-json.md",
-      "decisions/0011-host-showtime-window-on-vercel.md",
-      "projects/showtime-window.md"
+      "decisions/0011-host-showtime-window-on-vercel.md"
     ]
   },
   {
@@ -162,6 +161,7 @@
     ],
     "backlinks": [
       "decisions/0002-prebuild-showtimes-as-static-json.md",
+      "projects/showtime-window.md",
       "specs/0001-showtime-source-conformance.md"
     ]
   },
@@ -234,7 +234,8 @@
       "showtime-window"
     ],
     "backlinks": [
-      "decisions/0011-host-showtime-window-on-vercel.md"
+      "decisions/0011-host-showtime-window-on-vercel.md",
+      "projects/showtime-window.md"
     ]
   },
   {
@@ -412,6 +413,7 @@
     ],
     "backlinks": [
       "decisions/0011-host-showtime-window-on-vercel.md",
+      "projects/showtime-window.md",
       "specs/0001-showtime-source-conformance.md"
     ]
   },
@@ -859,7 +861,6 @@
     ],
     "backlinks": [
       "decisions/0003-cinemark-as-the-first-showtime-source.md",
-      "projects/showtime-window.md",
       "specs/0001-showtime-source-conformance.md"
     ]
   }
