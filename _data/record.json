@@ -166,6 +166,22 @@
     ]
   },
   {
+    "path": "decisions/0012-add-atlas-cinemas-via-veezi.md",
+    "kind": "adr",
+    "layer": "decision",
+    "ref": "ADR 0012",
+    "title": "Add Atlas Cinemas via Veezi and the nearby Cinemarks",
+    "status": "proposed",
+    "owner": "Michael Knepprath",
+    "date": "2026-10-16",
+    "projects": [
+      "showtime-window"
+    ],
+    "backlinks": [
+      "projects/showtime-window.md"
+    ]
+  },
+  {
     "path": "evidence/feedback/2026-10-16-owner-confirms-project-statuses.md",
     "kind": "feedback",
     "layer": "evidence",
@@ -263,7 +279,9 @@
       "showtime-window"
     ],
     "backlinks": [
+      "decisions/0012-add-atlas-cinemas-via-veezi.md",
       "evidence/observations/2026-10-16-cleveland-area-theater-access.md",
+      "evidence/observations/2026-10-16-showtime-window-veezi-conformance-run.md",
       "studies/0002-which-cleveland-area-theaters-can-be-read-for-free.md"
     ]
   },
@@ -314,6 +332,7 @@
       "showtime-window"
     ],
     "backlinks": [
+      "decisions/0012-add-atlas-cinemas-via-veezi.md",
       "studies/0002-which-cleveland-area-theaters-can-be-read-for-free.md"
     ]
   },
@@ -486,6 +505,21 @@
       "showtime-window"
     ],
     "backlinks": [
+      "projects/showtime-window.md"
+    ]
+  },
+  {
+    "path": "evidence/observations/2026-10-16-showtime-window-veezi-conformance-run.md",
+    "kind": "observation",
+    "layer": "evidence",
+    "title": "Showtime window's Veezi conformance run",
+    "date": "2026-10-16",
+    "source": "npm test, npm run conformance:live and npm run e2e in showtime-window at commits 68c751d and 244d46e, locally and against https://showtime-window.vercel.app, about 11:40 PM to midnight Eastern on 2026-10-16",
+    "projects": [
+      "showtime-window"
+    ],
+    "backlinks": [
+      "decisions/0012-add-atlas-cinemas-via-veezi.md",
       "projects/showtime-window.md"
     ]
   },
@@ -789,6 +823,7 @@
       "decisions/0002-prebuild-showtimes-as-static-json.md",
       "decisions/0003-cinemark-as-the-first-showtime-source.md",
       "decisions/0011-host-showtime-window-on-vercel.md",
+      "decisions/0012-add-atlas-cinemas-via-veezi.md",
       "evidence/feedback/2026-10-16-owner-constraints-for-showtime-window.md",
       "evidence/feedback/2026-10-16-owner-picks-theater-and-hosting.md",
       "evidence/observations/2026-10-16-alamo-drafthouse-schedule-json.md",
@@ -800,6 +835,7 @@
       "evidence/observations/2026-10-16-showtime-window-browser-test-run.md",
       "evidence/observations/2026-10-16-showtime-window-first-conformance-run.md",
       "evidence/observations/2026-10-16-showtime-window-shortlist-hand-check.md",
+      "evidence/observations/2026-10-16-showtime-window-veezi-conformance-run.md",
       "evidence/observations/2026-10-16-theater-site-access-from-a-script.md",
       "glossary/padding.md",
       "glossary/showing.md",
@@ -958,6 +994,7 @@
       "showtime-window"
     ],
     "backlinks": [
+      "decisions/0012-add-atlas-cinemas-via-veezi.md",
       "projects/showtime-window.md"
     ]
   }

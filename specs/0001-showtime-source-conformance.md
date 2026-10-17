@@ -60,7 +60,7 @@ Conforming sources only. Each criterion is scored 0–3 and multiplied by its we
 
 ```ts
 export type Showing = {
-  sourceId: "cinemark";
+  sourceId: "cinemark" | "veezi";
   theaterId: string;          // R6
   title: string;              // R1
   startUtc: string;           // R2 + R3, ISO 8601 with Z
@@ -84,7 +84,7 @@ export interface SourceAdapter {
 | T1 Fixture parse | A saved response parses to at least one `Showing` without throwing | R1, R2 |
 | T2 Required fields | Every showing has a non-empty `title`, a parseable `startUtc` and a `theaterId` | R1, R2, R6 |
 | T3 Timezone round trip | `startUtc` shown in `theaterTz` equals the local time on the site, for 3 sampled showings | R3 |
-| T4 Date window | `fetchDay` for today and today + 6 each return only showings on that local day | R4 |
+| T4 Date window | `fetchDay` for today and today + 6 each return only showings on that local day (shows before 4 AM count as the previous day; after 8 PM, "today" is tomorrow) | R4 |
 | T5 Plain fetch from production | A live request from the production server (Vercel, [ADR 0011](../decisions/0011-host-showtime-window-on-vercel.md)) returns 200 with no browser | R5 |
 | T6 Runtime sanity | When present, `runtimeMin` is between 40 and 300 | R7 |
 | T7 Drift alarm | 0 showings for a theater that had more than 0 the day before fails the build and keeps the previous JSON | Stability |
