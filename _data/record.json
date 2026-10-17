@@ -196,6 +196,39 @@
     ],
     "backlinks": [
       "decisions/0012-add-atlas-cinemas-via-veezi.md",
+      "decisions/0015-include-theaters-by-travel-time.md",
+      "projects/showtime-window.md"
+    ]
+  },
+  {
+    "path": "decisions/0014-add-cleveland-cinemas-via-its-box-office-api.md",
+    "kind": "adr",
+    "layer": "decision",
+    "ref": "ADR 0014",
+    "title": "Add Cleveland Cinemas through its box office API",
+    "status": "accepted",
+    "owner": "Michael Knepprath",
+    "date": "2026-10-17",
+    "projects": [
+      "showtime-window"
+    ],
+    "backlinks": [
+      "projects/showtime-window.md"
+    ]
+  },
+  {
+    "path": "decisions/0015-include-theaters-by-travel-time.md",
+    "kind": "adr",
+    "layer": "decision",
+    "ref": "ADR 0015",
+    "title": "Include theaters by travel time, not by ticking each one",
+    "status": "accepted",
+    "owner": "Michael Knepprath",
+    "date": "2026-10-17",
+    "projects": [
+      "showtime-window"
+    ],
+    "backlinks": [
       "projects/showtime-window.md"
     ]
   },
@@ -284,6 +317,8 @@
     ],
     "backlinks": [
       "decisions/0012-add-atlas-cinemas-via-veezi.md",
+      "decisions/0014-add-cleveland-cinemas-via-its-box-office-api.md",
+      "decisions/0015-include-theaters-by-travel-time.md",
       "projects/showtime-window.md"
     ]
   },
@@ -394,7 +429,9 @@
       "showtime-window"
     ],
     "backlinks": [
+      "decisions/0014-add-cleveland-cinemas-via-its-box-office-api.md",
       "evidence/observations/2026-10-16-cleveland-area-theater-access.md",
+      "evidence/observations/2026-10-17-cleveland-cinemas-api-boundaries.md",
       "studies/0002-which-cleveland-area-theaters-can-be-read-for-free.md"
     ]
   },
@@ -613,6 +650,37 @@
     ],
     "backlinks": [
       "projects/who-goes-there.md"
+    ]
+  },
+  {
+    "path": "evidence/observations/2026-10-17-cleveland-cinemas-api-boundaries.md",
+    "kind": "observation",
+    "layer": "evidence",
+    "title": "Cleveland Cinemas API accepts only 3 AM ranges and repeated ids",
+    "date": "2026-10-17",
+    "source": "curl calls to https://www.clevelandcinemas.com/api/gatsby-source-boxofficeapi/ and the site's theater list, about 9:30 AM Eastern on 2026-10-17",
+    "projects": [
+      "showtime-window"
+    ],
+    "backlinks": [
+      "decisions/0014-add-cleveland-cinemas-via-its-box-office-api.md"
+    ]
+  },
+  {
+    "path": "evidence/observations/2026-10-17-showtime-window-cleveland-cinemas-and-travel-limit-test-run.md",
+    "kind": "observation",
+    "layer": "evidence",
+    "title": "Cleveland Cinemas and the travel limit pass from Vercel",
+    "date": "2026-10-17",
+    "source": "npm test, scripts/conformance-live.ts and npm run e2e in the private showtime-window repo at commit 6a08c03, run locally and against https://showtime-window.vercel.app, 2026-10-17 about 9:45 AM Eastern",
+    "projects": [
+      "showtime-window"
+    ],
+    "backlinks": [
+      "decisions/0014-add-cleveland-cinemas-via-its-box-office-api.md",
+      "decisions/0015-include-theaters-by-travel-time.md",
+      "projects/showtime-window.md",
+      "specs/0001-showtime-source-conformance.md"
     ]
   },
   {
@@ -886,6 +954,8 @@
       "decisions/0011-host-showtime-window-on-vercel.md",
       "decisions/0012-add-atlas-cinemas-via-veezi.md",
       "decisions/0013-one-shortlist-across-theaters.md",
+      "decisions/0014-add-cleveland-cinemas-via-its-box-office-api.md",
+      "decisions/0015-include-theaters-by-travel-time.md",
       "evidence/feedback/2026-10-16-owner-constraints-for-showtime-window.md",
       "evidence/feedback/2026-10-16-owner-picks-theater-and-hosting.md",
       "evidence/feedback/2026-10-17-owner-wants-as-many-theaters-as-possible.md",
@@ -901,6 +971,8 @@
       "evidence/observations/2026-10-16-showtime-window-shortlist-hand-check.md",
       "evidence/observations/2026-10-16-showtime-window-veezi-conformance-run.md",
       "evidence/observations/2026-10-16-theater-site-access-from-a-script.md",
+      "evidence/observations/2026-10-17-cleveland-cinemas-api-boundaries.md",
+      "evidence/observations/2026-10-17-showtime-window-cleveland-cinemas-and-travel-limit-test-run.md",
       "evidence/observations/2026-10-17-showtime-window-combined-list-test-run.md",
       "glossary/padding.md",
       "glossary/showing.md",
@@ -1060,7 +1132,7 @@
     ],
     "backlinks": [
       "decisions/0012-add-atlas-cinemas-via-veezi.md",
-      "projects/showtime-window.md"
+      "decisions/0014-add-cleveland-cinemas-via-its-box-office-api.md"
     ]
   }
 ]
