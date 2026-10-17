@@ -2,7 +2,7 @@
 kind: adr
 number: 0012
 title: Add Atlas Cinemas via Veezi and the nearby Cinemarks
-status: proposed
+status: accepted
 owner: Michael Knepprath
 date: 2026-10-16
 projects: [showtime-window]
@@ -10,11 +10,12 @@ evidence:
   - evidence/observations/2026-10-16-atlas-cinemas-veezi-sessions-data.md
   - evidence/observations/2026-10-16-cleveland-area-theater-access.md
   - evidence/observations/2026-10-16-showtime-window-veezi-conformance-run.md
+  - evidence/feedback/2026-10-17-owner-wants-as-many-theaters-as-possible.md
 ---
 
 # ADR 0012: Add Atlas Cinemas via Veezi and the nearby Cinemarks
 
-Proposed: built and deployed, but the owner hasn't confirmed which theaters to keep.
+Accepted 2026-10-17: the owner keeps all eight and wants as many theaters as possible ([feedback](../evidence/feedback/2026-10-17-owner-wants-as-many-theaters-as-possible.md)).
 
 ## Context
 
@@ -37,7 +38,7 @@ Proposed: built and deployed, but the owner hasn't confirmed which theaters to k
 
 ## Consequences
 
-- The shortlist still covers one theater at a time. A combined list across theaters isn't built.
+- The shortlist covered one theater at a time; [ADR 0013](0013-one-shortlist-across-theaters.md) replaced that with one list across theaters.
 - A Veezi failure returns a 502 for that theater only; other theaters are unaffected.
 - T5 passed for Veezi from Vercel ([conformance run](../evidence/observations/2026-10-16-showtime-window-veezi-conformance-run.md)).
 - Veezi pages give no format (IMAX, 3D), so Atlas showings show none.

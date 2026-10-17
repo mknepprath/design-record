@@ -171,7 +171,7 @@
     "layer": "decision",
     "ref": "ADR 0012",
     "title": "Add Atlas Cinemas via Veezi and the nearby Cinemarks",
-    "status": "proposed",
+    "status": "accepted",
     "owner": "Michael Knepprath",
     "date": "2026-10-16",
     "projects": [
@@ -195,6 +195,7 @@
       "showtime-window"
     ],
     "backlinks": [
+      "decisions/0012-add-atlas-cinemas-via-veezi.md",
       "projects/showtime-window.md"
     ]
   },
@@ -268,6 +269,21 @@
     ],
     "backlinks": [
       "decisions/0011-host-showtime-window-on-vercel.md",
+      "projects/showtime-window.md"
+    ]
+  },
+  {
+    "path": "evidence/feedback/2026-10-17-owner-wants-as-many-theaters-as-possible.md",
+    "kind": "feedback",
+    "layer": "evidence",
+    "title": "Owner wants as many theaters as possible",
+    "date": "2026-10-17",
+    "source": "Michael Knepprath, Claude Code conversation, 2026-10-17",
+    "projects": [
+      "showtime-window"
+    ],
+    "backlinks": [
+      "decisions/0012-add-atlas-cinemas-via-veezi.md",
       "projects/showtime-window.md"
     ]
   },
@@ -872,6 +888,7 @@
       "decisions/0013-one-shortlist-across-theaters.md",
       "evidence/feedback/2026-10-16-owner-constraints-for-showtime-window.md",
       "evidence/feedback/2026-10-16-owner-picks-theater-and-hosting.md",
+      "evidence/feedback/2026-10-17-owner-wants-as-many-theaters-as-possible.md",
       "evidence/feedback/2026-10-17-owner-wants-one-list-across-theaters.md",
       "evidence/observations/2026-10-16-alamo-drafthouse-schedule-json.md",
       "evidence/observations/2026-10-16-atlas-cinemas-veezi-sessions-data.md",
