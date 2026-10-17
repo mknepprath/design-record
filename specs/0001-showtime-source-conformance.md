@@ -2,7 +2,7 @@
 kind: spec
 number: 0001
 title: Showtime source conformance
-status: draft
+status: accepted
 owner: Michael Knepprath
 date: 2026-10-16
 projects: [showtime-window]
@@ -10,6 +10,7 @@ evidence:
   - evidence/observations/2026-10-16-theater-site-access-from-a-script.md
   - evidence/observations/2026-10-16-cinemark-screeningevent-data.md
   - evidence/feedback/2026-10-16-owner-constraints-for-showtime-window.md
+  - evidence/observations/2026-10-16-showtime-window-first-conformance-run.md
 ---
 
 # Spec 0001: Showtime source conformance
@@ -84,17 +85,17 @@ export interface SourceAdapter {
 | T2 Required fields | Every showing has a non-empty `title`, a parseable `startUtc` and a `theaterId` | R1, R2, R6 |
 | T3 Timezone round trip | `startUtc` shown in `theaterTz` equals the local time on the site, for 3 sampled showings | R3 |
 | T4 Date window | `fetchDay` for today and today + 6 each return only showings on that local day | R4 |
-| T5 Plain fetch from CI | A live request from GitHub Actions returns 200 with no browser | R5 |
+| T5 Plain fetch from production | A live request from the production server (Vercel, [ADR 0011](../decisions/0011-host-showtime-window-on-vercel.md)) returns 200 with no browser | R5 |
 | T6 Runtime sanity | When present, `runtimeMin` is between 40 and 300 | R7 |
 | T7 Drift alarm | 0 showings for a theater that had more than 0 the day before fails the build and keeps the previous JSON | Stability |
 
-T5 matters most. Every observation so far came from a home connection ([access probe](../evidence/observations/2026-10-16-theater-site-access-from-a-script.md)); datacenter IP addresses may be treated differently. If T5 fails, the fallback is a scheduled job on a local machine that pushes the JSON.
+T5 mattered most, because datacenter IP addresses may be treated differently from a home connection. It passed from Vercel on 2026-10-16, along with T1–T4 and T6 ([first conformance run](../evidence/observations/2026-10-16-showtime-window-first-conformance-run.md)). T7 isn't implemented: there is no stored previous day to compare against under ADR 0011.
 
 ### Cinemark notes for the adapter
 
 From the [Cinemark observation](../evidence/observations/2026-10-16-cinemark-screeningevent-data.md):
 
-- The `ScreeningEvent` objects are escaped JSON inside the page, not a plain `ld+json` script tag. Extract and unescape before parsing.
+- The schema.org `@graph` (MovieTheater, Movie, ScreeningEvent) is inside the React Server Components payload: the string chunks pushed to `self.__next_f`. Join and JSON-decode those chunks, then parse each `{"@context":"https://schema.org"…}` object. The film title comes from the Movie node that `workPresented` points to.
 - `startDate` carries a UTC offset (`-05:00`); `duration` is ISO 8601 (`PT1H59M`).
 - The day is selected with `?showDate=YYYY-MM-DD`; `?date=` is ignored.
 - `theaterId` = the path after `/theatres/` (e.g. `tx-austin/cinemark-southpark-meadows`).

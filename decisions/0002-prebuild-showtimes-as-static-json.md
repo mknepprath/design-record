@@ -2,7 +2,7 @@
 kind: adr
 number: 0002
 title: Prebuild showtimes as static JSON on a schedule
-status: proposed
+status: superseded
 owner: Michael Knepprath
 date: 2026-10-16
 projects: [showtime-window]
@@ -12,6 +12,8 @@ evidence:
 ---
 
 # ADR 0002: Prebuild showtimes as static JSON on a schedule
+
+Superseded by [ADR 0011](0011-host-showtime-window-on-vercel.md) before it was built.
 
 ## Context
 

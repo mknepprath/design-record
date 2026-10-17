@@ -21,7 +21,7 @@
     "layer": "decision",
     "ref": "ADR 0002",
     "title": "Prebuild showtimes as static JSON on a schedule",
-    "status": "proposed",
+    "status": "superseded",
     "owner": "Michael Knepprath",
     "date": "2026-10-16",
     "projects": [
@@ -30,6 +30,7 @@
     "backlinks": [
       "decisions/0001-build-a-web-app-first.md",
       "decisions/0005-publish-lily-dex-data-as-static-json.md",
+      "decisions/0011-host-showtime-window-on-vercel.md",
       "projects/showtime-window.md"
     ]
   },
@@ -148,6 +149,23 @@
     "backlinks": []
   },
   {
+    "path": "decisions/0011-host-showtime-window-on-vercel.md",
+    "kind": "adr",
+    "layer": "decision",
+    "ref": "ADR 0011",
+    "title": "Host Showtime window on Vercel and fetch showtimes on demand",
+    "status": "accepted",
+    "owner": "Michael Knepprath",
+    "date": "2026-10-16",
+    "projects": [
+      "showtime-window"
+    ],
+    "backlinks": [
+      "decisions/0002-prebuild-showtimes-as-static-json.md",
+      "specs/0001-showtime-source-conformance.md"
+    ]
+  },
+  {
     "path": "evidence/feedback/2026-10-16-owner-confirms-project-statuses.md",
     "kind": "feedback",
     "layer": "evidence",
@@ -203,6 +221,20 @@
       "decisions/0003-cinemark-as-the-first-showtime-source.md",
       "projects/showtime-window.md",
       "specs/0001-showtime-source-conformance.md"
+    ]
+  },
+  {
+    "path": "evidence/feedback/2026-10-16-owner-picks-theater-and-hosting.md",
+    "kind": "feedback",
+    "layer": "evidence",
+    "title": "Owner picks the theater and hosting for Showtime window",
+    "date": "2026-10-16",
+    "source": "Michael Knepprath, Claude Code conversation, 2026-10-16",
+    "projects": [
+      "showtime-window"
+    ],
+    "backlinks": [
+      "decisions/0011-host-showtime-window-on-vercel.md"
     ]
   },
   {
@@ -267,6 +299,7 @@
     ],
     "backlinks": [
       "decisions/0002-prebuild-showtimes-as-static-json.md",
+      "decisions/0011-host-showtime-window-on-vercel.md",
       "studies/0001-which-showtime-sources-can-be-read-for-free.md"
     ]
   },
@@ -365,6 +398,21 @@
       "projects/tiny-mystery-club.md",
       "projects/who-goes-there.md",
       "projects/ytcast.md"
+    ]
+  },
+  {
+    "path": "evidence/observations/2026-10-16-showtime-window-first-conformance-run.md",
+    "kind": "observation",
+    "layer": "evidence",
+    "title": "Showtime window's first conformance run",
+    "date": "2026-10-16",
+    "source": "npm test and npm run conformance:live in showtime-window at commit d094286, 2026-10-16",
+    "projects": [
+      "showtime-window"
+    ],
+    "backlinks": [
+      "decisions/0011-host-showtime-window-on-vercel.md",
+      "specs/0001-showtime-source-conformance.md"
     ]
   },
   {
@@ -665,10 +713,13 @@
       "decisions/0001-build-a-web-app-first.md",
       "decisions/0002-prebuild-showtimes-as-static-json.md",
       "decisions/0003-cinemark-as-the-first-showtime-source.md",
+      "decisions/0011-host-showtime-window-on-vercel.md",
       "evidence/feedback/2026-10-16-owner-constraints-for-showtime-window.md",
+      "evidence/feedback/2026-10-16-owner-picks-theater-and-hosting.md",
       "evidence/observations/2026-10-16-alamo-drafthouse-schedule-json.md",
       "evidence/observations/2026-10-16-cinemark-screeningevent-data.md",
       "evidence/observations/2026-10-16-free-showtime-data-options.md",
+      "evidence/observations/2026-10-16-showtime-window-first-conformance-run.md",
       "evidence/observations/2026-10-16-theater-site-access-from-a-script.md",
       "glossary/padding.md",
       "glossary/showing.md",
@@ -766,7 +817,7 @@
     "layer": "decision",
     "ref": "Spec 0001",
     "title": "Showtime source conformance",
-    "status": "draft",
+    "status": "accepted",
     "owner": "Michael Knepprath",
     "date": "2026-10-16",
     "projects": [
