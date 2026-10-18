@@ -433,7 +433,8 @@
     ],
     "backlinks": [
       "decisions/0012-add-atlas-cinemas-via-veezi.md",
-      "studies/0002-which-cleveland-area-theaters-can-be-read-for-free.md"
+      "studies/0002-which-cleveland-area-theaters-can-be-read-for-free.md",
+      "studies/0003-more-northeast-ohio-theaters-and-what-their-terms-allow.md"
     ]
   },
   {
@@ -748,6 +749,36 @@
     ]
   },
   {
+    "path": "evidence/observations/2026-10-18-fandango-schedule-endpoints.md",
+    "kind": "observation",
+    "layer": "evidence",
+    "title": "Fandango's schedule endpoints work from a script and from Vercel",
+    "date": "2026-10-18",
+    "source": "Headless Chromium on https://www.fandango.com/atlas-cinemas-at-shaker-square-aafyb/theater-page, curl from a home connection, and a temporary route on a protected Vercel preview deployment (branch probe-fandango, since deleted), 2026-10-18 about 8:00–8:20 AM Eastern",
+    "projects": [
+      "showtime-window"
+    ],
+    "backlinks": [
+      "evidence/observations/2026-10-18-theater-site-terms-on-automated-access.md",
+      "studies/0003-more-northeast-ohio-theaters-and-what-their-terms-allow.md"
+    ]
+  },
+  {
+    "path": "evidence/observations/2026-10-18-theater-site-terms-on-automated-access.md",
+    "kind": "observation",
+    "layer": "evidence",
+    "title": "Fandango, Cinemark and Cleveland Cinemas terms prohibit automated collection",
+    "date": "2026-10-18",
+    "source": "https://www.fandango.com/policies/terms-of-use, https://www.cinemark.com/terms-conditions, https://www.clevelandcinemas.com/terms/, the Atlas Cinemas home page and a Veezi sessions page, fetched with curl 2026-10-18 about 8:25 AM Eastern",
+    "projects": [
+      "showtime-window"
+    ],
+    "backlinks": [
+      "evidence/observations/2026-10-18-fandango-schedule-endpoints.md",
+      "studies/0003-more-northeast-ohio-theaters-and-what-their-terms-allow.md"
+    ]
+  },
+  {
     "path": "glossary/padding.md",
     "kind": "glossary",
     "layer": "synthesis",
@@ -1027,11 +1058,14 @@
       "evidence/observations/2026-10-17-cleveland-cinemas-api-boundaries.md",
       "evidence/observations/2026-10-17-showtime-window-cleveland-cinemas-and-travel-limit-test-run.md",
       "evidence/observations/2026-10-17-showtime-window-combined-list-test-run.md",
+      "evidence/observations/2026-10-18-fandango-schedule-endpoints.md",
+      "evidence/observations/2026-10-18-theater-site-terms-on-automated-access.md",
       "glossary/padding.md",
       "glossary/showing.md",
       "specs/0001-showtime-source-conformance.md",
       "studies/0001-which-showtime-sources-can-be-read-for-free.md",
-      "studies/0002-which-cleveland-area-theaters-can-be-read-for-free.md"
+      "studies/0002-which-cleveland-area-theaters-can-be-read-for-free.md",
+      "studies/0003-more-northeast-ohio-theaters-and-what-their-terms-allow.md"
     ]
   },
   {
@@ -1185,7 +1219,25 @@
     ],
     "backlinks": [
       "decisions/0012-add-atlas-cinemas-via-veezi.md",
-      "decisions/0014-add-cleveland-cinemas-via-its-box-office-api.md"
+      "decisions/0014-add-cleveland-cinemas-via-its-box-office-api.md",
+      "studies/0003-more-northeast-ohio-theaters-and-what-their-terms-allow.md"
+    ]
+  },
+  {
+    "path": "studies/0003-more-northeast-ohio-theaters-and-what-their-terms-allow.md",
+    "kind": "study",
+    "layer": "synthesis",
+    "ref": "Study 0003",
+    "title": "More Northeast Ohio theaters, and what their terms allow",
+    "status": "running",
+    "owner": "Michael Knepprath",
+    "date": "2026-10-18",
+    "projects": [
+      "showtime-window"
+    ],
+    "backlinks": [
+      "evidence/observations/2026-10-18-theater-site-terms-on-automated-access.md",
+      "projects/showtime-window.md"
     ]
   }
 ]

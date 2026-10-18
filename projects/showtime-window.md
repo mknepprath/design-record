@@ -55,6 +55,8 @@ Live at [showtime-window.vercel.app](https://showtime-window.vercel.app) since 2
 
 Since [ADR 0013](../decisions/0013-one-shortlist-across-theaters.md), one list covers several theaters, each with its own travel minutes, which can be estimated from your location. Since [ADR 0015](../decisions/0015-include-theaters-by-travel-time.md), it covers every theater within a max travel time, minus any turned off.
 
+Open decision: Cinemark's and Cleveland Cinemas' terms prohibit automated collection, as do Fandango's, which would add Regal and AMC ([Study 0003](../studies/0003-more-northeast-ohio-theaters-and-what-their-terms-allow.md)).
+
 Since 2026-10-18 the GitHub repo is connected to Vercel: pushes to `main` deploy to production. Commit 700dc90 built and went live within about a minute of the push.
 
 ## Private documents
