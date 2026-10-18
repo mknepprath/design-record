@@ -355,6 +355,21 @@
     ]
   },
   {
+    "path": "evidence/feedback/2026-10-18-owner-tables-showtime-window.md",
+    "kind": "feedback",
+    "layer": "evidence",
+    "title": "Owner tables Showtime window over source terms",
+    "date": "2026-10-18",
+    "source": "Michael Knepprath, Claude Code conversation, 2026-10-18",
+    "projects": [
+      "showtime-window"
+    ],
+    "backlinks": [
+      "projects/showtime-window.md",
+      "studies/0003-more-northeast-ohio-theaters-and-what-their-terms-allow.md"
+    ]
+  },
+  {
     "path": "evidence/observations/2026-10-16-alamo-drafthouse-schedule-json.md",
     "kind": "observation",
     "layer": "evidence",
@@ -1024,7 +1039,7 @@
     "kind": "project",
     "layer": "project",
     "title": "Showtime window",
-    "status": "active",
+    "status": "paused",
     "owner": "Michael Knepprath",
     "date": "2026-10-16",
     "projects": [],
@@ -1042,6 +1057,7 @@
       "evidence/feedback/2026-10-16-owner-picks-theater-and-hosting.md",
       "evidence/feedback/2026-10-17-owner-wants-as-many-theaters-as-possible.md",
       "evidence/feedback/2026-10-17-owner-wants-one-list-across-theaters.md",
+      "evidence/feedback/2026-10-18-owner-tables-showtime-window.md",
       "evidence/observations/2026-10-16-alamo-drafthouse-schedule-json.md",
       "evidence/observations/2026-10-16-atlas-cinemas-veezi-sessions-data.md",
       "evidence/observations/2026-10-16-cinemark-screeningevent-data.md",
@@ -1236,6 +1252,7 @@
       "showtime-window"
     ],
     "backlinks": [
+      "evidence/feedback/2026-10-18-owner-tables-showtime-window.md",
       "evidence/observations/2026-10-18-theater-site-terms-on-automated-access.md",
       "projects/showtime-window.md"
     ]

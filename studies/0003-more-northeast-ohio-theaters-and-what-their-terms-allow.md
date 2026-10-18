@@ -14,7 +14,7 @@ evidence:
 
 # Study 0003: More Northeast Ohio theaters, and what their terms allow
 
-Blocked: the owner has to decide how the project treats sites whose terms prohibit automated collection.
+Blocked: the owner has to decide how the project treats sites whose terms prohibit automated collection. The project was paused on 2026-10-18 instead ([feedback](../evidence/feedback/2026-10-18-owner-tables-showtime-window.md)).
 
 ## Question
 

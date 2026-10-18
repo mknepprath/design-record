@@ -1,7 +1,7 @@
 ---
 kind: project
 title: Showtime window
-status: active
+status: paused
 owner: Michael Knepprath
 date: 2026-10-16
 ---
@@ -9,6 +9,8 @@ date: 2026-10-16
 # Showtime window
 
 A web app where you enter the time you have free and get back the movies you can watch inside it, counting trailers and travel.
+
+Paused 2026-10-18 by the owner ([feedback](../evidence/feedback/2026-10-18-owner-tables-showtime-window.md)): the sources that cover most theaters prohibit automated collection in their terms ([Study 0003](../studies/0003-more-northeast-ohio-theaters-and-what-their-terms-allow.md)). Clean ways to resume: written permission from Cinemark and Cleveland Cinemas, an AMC developer API key, or a paid showtimes feed if the $0 budget changes. The app is still deployed at showtime-window.vercel.app and still fetches from those sources when visited.
 
 ## Problem
 
