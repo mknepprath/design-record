@@ -355,6 +355,22 @@
     ]
   },
   {
+    "path": "evidence/feedback/2026-10-18-owner-keeps-security-sensitive-plans-private.md",
+    "kind": "feedback",
+    "layer": "evidence",
+    "title": "Owner keeps security-sensitive plans private",
+    "date": "2026-10-18",
+    "source": "Michael Knepprath, Claude Code conversation, 2026-10-18",
+    "projects": [
+      "home-bridge",
+      "ytcast"
+    ],
+    "backlinks": [
+      "projects/home-bridge.md",
+      "projects/ytcast.md"
+    ]
+  },
+  {
     "path": "evidence/feedback/2026-10-18-owner-tables-showtime-window.md",
     "kind": "feedback",
     "layer": "evidence",
@@ -905,6 +921,19 @@
     ]
   },
   {
+    "path": "projects/home-bridge.md",
+    "kind": "project",
+    "layer": "project",
+    "title": "Home bridge",
+    "status": "active",
+    "owner": "Michael Knepprath",
+    "date": "2026-10-18",
+    "projects": [],
+    "backlinks": [
+      "evidence/feedback/2026-10-18-owner-keeps-security-sensitive-plans-private.md"
+    ]
+  },
+  {
     "path": "projects/lilt.md",
     "kind": "project",
     "layer": "project",
@@ -1165,6 +1194,7 @@
     "date": "2026-10-16",
     "projects": [],
     "backlinks": [
+      "evidence/feedback/2026-10-18-owner-keeps-security-sensitive-plans-private.md",
       "evidence/observations/2026-10-16-repository-activity.md"
     ]
   },

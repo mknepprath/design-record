@@ -8,7 +8,7 @@ date: 2026-10-16
 
 # ytcast
 
-Turns a YouTube channel into an audio-only podcast feed for Overcast. You give it a channel and get back an RSS URL; each episode's audio is fetched the first time it's requested.
+A personal media tool. Details stay in the private repo ([owner, 2026-10-18](../evidence/feedback/2026-10-18-owner-keeps-security-sensitive-plans-private.md)).
 
 ## Private documents
 
