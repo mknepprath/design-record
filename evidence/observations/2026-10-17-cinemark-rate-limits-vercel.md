@@ -19,3 +19,7 @@ projects: [showtime-window]
 - Pacing at 1.5 seconds didn't avoid it. The limit's window and threshold aren't known. Vercel's outbound addresses are shared, so other traffic may count toward it (inference).
 - Earlier runs with 3 to 10 Cinemark theaters passed from Vercel ([2026-10-16](2026-10-16-showtime-window-first-conformance-run.md), [2026-10-17](2026-10-17-showtime-window-cleveland-cinemas-and-travel-limit-test-run.md)).
 - The page's fetch loop re-requested every theater-day still loading each time one finished, so a page with many theaters sent many duplicate requests. Fixed in the same follow-up.
+
+## Follow-up, 2026-10-18
+
+The 21 theaters whose checks were refused were rerun through production in four groups of four or five theaters, 3 seconds per request and 2 minutes between groups, from 8:12 to 8:22 AM Eastern. Result: 42 of 42 passed, with no 429s. Each theater had showings on 2026-10-18 and 2026-10-22, and none was on another day.
