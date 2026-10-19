@@ -1,7 +1,7 @@
 ---
 kind: project
 title: Home bridge
-status: active
+status: paused
 owner: Michael Knepprath
 date: 2026-10-18
 ---
@@ -20,4 +20,4 @@ The repo is private; these links work for collaborators only.
 
 ## Status
 
-Started 2026-10-18. The bridge is installed; the device is not connected yet.
+Paused 2026-10-18. The device is connected and partly working in Apple Home; the rest needs a paid service, so it stops here.
