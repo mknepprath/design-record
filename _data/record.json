@@ -925,7 +925,7 @@
     "kind": "project",
     "layer": "project",
     "title": "Home bridge",
-    "status": "active",
+    "status": "paused",
     "owner": "Michael Knepprath",
     "date": "2026-10-18",
     "projects": [],
